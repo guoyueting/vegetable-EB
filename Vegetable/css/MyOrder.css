@@ -1,0 +1,212 @@
+.right {
+    min-height:760px;
+}
+
+.fixedBar {
+    width:100%;
+    height:48px;
+    border-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+.label {
+    color:#707070;
+    text-align: center;
+    font-size:18px;
+    line-height: 48px;
+}
+
+.label1 {
+    margin-left:60px;
+}
+.label2 {
+    margin-left:280px;
+}
+.label3 {
+    margin-left:80px;
+}
+.label4 {
+    margin-left:60px;
+}
+.label5 {
+    margin-left:60px;
+}
+.label6 {
+    margin-left:60px;
+}
+
+.orderBody {
+    width:100%;
+    min-height:200px;
+    border:1px solid #D9DADB;
+    border-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    margin-bottom:20px;
+}
+
+.orderBar {
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    background-color:#F8F8F8;
+    border-bottom:1px solid #D9DADB;
+}
+
+.span1 {
+    margin-left:20px;
+    color:#707070;
+}
+.span2 {
+    margin-left:80px;
+    color:#707070;
+}
+.span3 {
+    margin-left:80px;
+    color:#707070;
+}
+.orderContent {
+    overflow:hidden;
+}
+
+.orderContent .productInfo img{
+    width:90px;
+    height:90px;
+    float:left;
+    margin-top: 30px;
+    margin-left:30px;
+    display:inline-block;
+}
+.orderContent .productInfo p{
+    float:left;
+    margin-top: 55px;
+    margin-left:40px;
+    width:200px;
+    color:#6C6C6C;
+    display:inline-block;
+}
+
+.singlePrice {
+    float:left;
+    margin-top: 55px;
+    margin-left:25px;
+    color:#6C6C6C;
+    font-weight:bold;
+    font-size:18px;
+    display:inline-block;
+}
+
+.number {
+    float:left;
+    margin-top: 55px;
+    margin-left:85px;
+    color:#6C6C6C;
+    font-size:18px;
+    display:inline-block;
+}
+
+.totalPayment {
+    float:left;
+    margin-top: 55px;
+    margin-left:60px;
+    font-size:18px;
+    display:inline-block;
+}
+
+.totalPayment .price {
+    color:#FF6D40;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.TradeStatus {
+    float:left;
+    margin-top: 55px;
+    margin-left:40px;
+    width:100px;
+    color:#6C6C6C;
+    text-align: center;
+    display:inline-block;
+}
+
+.TradeStatus .orderDetail{
+   color:#00A934;
+   text-decoration:underline;
+}
+
+.TradeStatus span {
+    display: inline-block;
+    width:100px;
+    height:20px;
+    padding-bottom:10px;
+}
+.operation {
+    float:left;
+    margin-top: 55px;
+    margin-left:20px;
+    width:100px;
+    color:#6C6C6C;
+    text-align: center;
+    display:inline-block;
+}
+
+.operation span {
+    display: inline-block;
+    width:100px;
+    padding-bottom:10px;
+}
+.payList {
+    overflow:hidden;
+}
+
+.orderContentLeft {
+    /*min-height:159px;*/
+    width:550px;
+    float: left;
+}
+
+.toPay {
+    height:159px;
+    width:550px;
+    border:1px solid #D9DADB;
+    border-top:0;
+    border-left:0;
+    border-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.orderContentRight {
+    display:block;
+    float: right;
+    margin-right:22px;
+    margin-top:70px;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.goToPay {
+    background: #FF6D40;
+    padding: 10px;
+    width: 60px;
+    height: 10px;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size:14px;
+    color: #f3f3f3;
+    margin-left: 6px;
+    border: 1px solid #FF6D40;
+}
+
+.goToSign {
+    background: #00A934;
+    padding: 10px;
+    width: 80px;
+    height: 10px;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size:14px;
+    color: #f3f3f3;
+    margin-left: 2px;
+    border: 1px solid #00A934;
+}

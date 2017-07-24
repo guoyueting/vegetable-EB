@@ -1,0 +1,203 @@
+
+.center .right{
+    height:760px;
+    width: 980px;
+    margin-left: 20px;
+    float: right;
+
+}
+.center .right .userInfo{
+    width: 978px;
+    height: 128px;
+    border: 1px solid #A1A1A1;
+
+}
+.center .right .userInfo div{
+    display: inline-block;
+    float: left;
+}
+.center .right .userInfo .photo{
+    width: 100px;
+    height: 118px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.center .right .userInfo .photo img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #A1A1A1;
+    border-radius: 60px;
+    margin-left: 25px;
+}
+.center .right .userName{
+    width: 120px;
+    height: 118px;
+
+    margin-left: 20px;
+}
+.center .right .userName .p1{
+    font-weight: bold;
+    margin-top: 30px;
+
+
+}
+.center .right .userName .p2{
+    margin-top: 5px;
+    font-weight: bold;
+    color: #FD3D4C;
+}
+
+.center .right .jifen{
+    width: 180px;
+    height: 118px;
+    margin-left: 200px;
+
+}
+.center .right .jifen .p3{
+    margin-top: 30px;
+
+}
+.center .right .jifen .p3 span{
+    font-weight: bold;
+    color: #FD3D4C;
+    margin-left: 5px;
+}
+.center .right .jifen .p4{
+    font-size: 12px;
+    color: #A1A1A1;
+    opacity: 0.8;
+
+}
+.center .right .jifen .p5{
+    margin-top: 10px;
+}
+.center .right .jifen .p5 a{
+    color: #00A934;
+    text-decoration: underline;
+}
+.center .right .userInfo .youhui{
+    height: 118px;
+    margin-left: 100px;
+}
+.center .right .userInfo .youhui .p6{
+    margin-top: 30px;
+
+}
+.center .right .userInfo .youhui .p6 span:first-child{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.center .right .userInfo .youhui .p6 span:last-child{
+    font-weight: bold;
+    color: #FD3D4C;
+}
+.center .right .userInfo .youhui .p7,.p8{
+    font-size: 12px;
+    color: #A1A1A1;
+    opacity: 0.8;
+}
+.center .right .userP{
+    margin-top: 15px;
+    width: 978px;
+    height: 608px;
+    border: 1px solid #A1A1A1;
+}
+.center .right .userP .pri{
+    height: 50px;
+    width: 953px;
+    margin-left: 25px;
+    line-height: 80px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.center .right .userP .margin{
+    margin-top: 50px;
+}
+
+.center .right .userP .image{
+    width: 953px;
+    height: 50px;
+    margin-left: 25px;
+    line-height: 50px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+}
+.center .right .userP .image div{
+    display: inline-block;
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+}
+.center .right .userP .image div img{
+    padding: 0;
+    margin: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    vertical-align: middle;
+
+}
+
+.center .right .userP .tb{
+    width: 953px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.center .right .userP .tb table{
+    text-align: center;
+    border-collapse: collapse;
+    border-color: #D9DADB;
+}
+.center .right .userP .tb table tr{
+    width: 900px;
+    height: 25px;
+}
+.center .right .userP .tb table td{
+    width: 180px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #d9dadb;
+}
+.center .right .userP .tb table th{
+    width: 180px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #d9dadb;
+}
+
+.center .right .userP .tb2{
+    width: 953px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.center .right .userP .tb2 table{
+    border-collapse: collapse;
+    width: 900px;
+}
+.center .right .userP .tb2 table tr{
+    width: 900px;
+    height: 25px;
+
+}
+
+.center .right .userP .tb2 table tr td{
+    width: 180px;
+    height: 25px;
+    text-align: center;
+    border-left: 0;
+    border: 1px solid #d9dadb;
+}
+
+.center .right .userP .tb2 table tr td span{
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.medal {
+    vertical-align: middle;
+}

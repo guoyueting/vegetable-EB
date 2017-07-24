@@ -1,0 +1,121 @@
+
+.center .right{
+    miheight:760px;
+    width: 980px;
+    margin-left: 20px;
+    float: right;
+
+}
+.center .right .collect{
+    height: 406px;
+    width: 978px;
+    border:1px solid #A1A1A1;
+    border-top: 0;
+    color:#666;
+}
+.center .right .collect .cNav{
+    height: 40px;
+    line-height: 40px;
+    border-top: 3px solid #01BC39;
+    border-bottom: 1px solid #A1A1A1;
+    background-color: #F2F2F2;
+}
+.center .right .collect .cNav span{
+    display: inline-block;
+}
+.center .right .collect .cNav .s1{
+    margin-left: 8px;
+    width: 150px;
+}
+.center .right .collect .cNav .s2{
+    width: 400px;
+    text-align: center;
+}
+.center .right .collect .cNav .s3{
+    width: 210px;
+    text-align: center;
+}
+.center .right .collect .cNav .s4{
+    width: 198px;
+    text-align: center;
+}
+.center .right .collect .good{
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #A1A1A1;
+}
+.center .right .collect .good:last-child{
+    border-bottom: 0;
+}
+.center .right .collect .good div{
+    float: left;
+}
+.center .right .collect .good .d1{
+    width: 50px;
+    height: 120px;
+    line-height: 120px;
+    margin-left: 8px;
+
+}
+.center .right .collect .good .goodInfo{
+    height: 120px;
+    width: 550px;
+    line-height: 120px;
+    display: flex;
+    align-items: center;
+}
+.center .right .collect .good .goodInfo img{
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+}
+.center .right .collect .good .goodInfo p{
+    height: 60px;
+    width: 410px;
+    margin-left: 10px;
+    margin-top: 30px;
+    display: inline-block;
+    line-height: normal;
+
+}
+.center .right .collect .good .price{
+    width: 150px;
+    height: 120px;
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+    line-height: 120px;
+    text-align: center;
+}
+.center .right .collect .good .op{
+    margin-left: 50px;
+    width: 150px;
+    height: 120px;
+}
+.center .right .collect .good .op span{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+
+}
+.center .right .collect .good .op span:first-child{
+    margin-top: 25px;
+}
+
+.center .right .operation{
+    height: 60px;
+    width: 978px;
+    margin-top: 20px;
+    border: 1px solid #A1A1A1;
+}
+.center .right .operation span{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 20px;
+}
+.center .right .operation span:first-child{
+    margin-left: 8px;
+    color:#666;
+}

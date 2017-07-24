@@ -1,0 +1,132 @@
+.center .right{
+    width: 980px;
+    margin-left: 20px;
+    float: right;
+    min-height: 600px;
+}
+
+.center .right .barname {
+    width: 980px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    background: #F2F2F2;
+    padding: 13px 15px;
+}
+
+.center .right .barname > span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.center .right .bannerpicture {
+    width: 980px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 1px solid #E1E2E2;
+}
+
+.center .right .recomendDetail{
+    border: 1px solid #E1E2E2;
+    overflow: hidden;
+    height:660px;
+}
+.center .right .step {
+    width: 980px;
+    height: 80px;
+}
+
+.center .right .step .stepbox {
+    width:300px;
+    height: 120px;
+    box-sizing: border-box;
+    border: 2px solid #FF6D40;
+    float: left;
+    margin: 35px 13px;
+}
+
+.center .right .step .stepbox .steptitle {
+    font-weight: bold;
+    font-size: 24px;
+    color: #FF6D40;
+    box-sizing: border-box;
+    height:50px;
+    width: 120px;
+    padding: 10px 20px;
+    position: relative;
+    margin : -25px auto;
+    background: #ffffff;
+    z-index: 1em;
+
+}
+.center .right .step .stepbox .stepcontent {
+    font-size: 16px;
+    /*position: relative;*/
+    margin:35px 35px;
+}
+
+.center .right .recommend1 {
+    width: 90%;
+    height: 150px;
+    position: relative;
+    margin-left:30px;
+    display:block;
+}
+
+.center .right .recommend1> span {
+    font-size:14px;
+    font-weight: bold;
+}
+
+.center .right .recommend1 .hrefcontent {
+    height: 100px;
+    width:100%;
+    background-color: #F2F2F2;
+    padding:15px 20px 15px 25px;
+    margin-top:8px;
+}
+
+.center .right .recommend1 .hrefcontent > span {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.center .right .recommend1 .hrefcontent >input {
+    width:500px;
+    height:25px;
+}
+.center .right .recommend1 .hrefcontent > button {
+    height:29px;
+    margin-left:10px;
+}
+
+.center .right .recommend2 {
+    width: 90%;
+    height: 250px;
+    margin-left:30px;
+    display:block;
+    float:left;
+    margin-top:150px;
+}
+
+.center .right .recommend2 > span {
+    font-size:14px;
+    font-weight: bold;
+}
+
+.center .right .recommend2 .qrcode {
+    height: 200px;
+    width:100%;
+    background-color: #F2F2F2;
+    padding:15px 20px 15px 25px;
+    margin-top:8px;
+}
+
+.center .right .recommend2 .qrcode > img {
+    display: block;
+    margin-top:15px;
+    height:160px;
+    width:160px;
+}

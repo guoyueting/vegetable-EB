@@ -1,0 +1,196 @@
+.InfoRight{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d1d1d1;
+
+
+    min-height: 658px;
+    width: 980px;
+
+    float: right;
+}
+
+/*基本信息右主体*/
+.InfoTop{
+    border-bottom:1px solid #d1d1d1;
+    border-top:2px solid #61D182;
+    height:50px;
+    background-color: #F2F2F2;
+}
+.InfoTop p{
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6C6C6C;
+}
+
+.userphoto img{
+    width:100px;
+    height: 100px;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #A1A1A1;
+    margin-right: 6px;
+
+    -moz-border-radius: 52px;
+    -webkit-border-radius: 52px;
+    border-radius: 52px;
+}
+
+.sexlabel{
+    padding-left:15px;
+    text-align: center;
+}
+
+.InfoBody{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.InfoTable tr{
+    height: 50px;
+    margin-top: 30px;
+}
+
+.InfoTable tr td input{
+    height: 28px;
+    border: 1px solid #D9DADB;
+    width: 250px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.input-group .form-control{
+    height: 25px;
+}
+
+.input-group-addon{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tablelabel{
+    float: right;
+    padding-top: 14px;
+    font-size: 14px;
+    color:#6C6C6C;
+    position: relative;
+    margin-top: 13px;
+}
+
+.tablelabel_photo {
+    padding-top: 40px;
+    float: right;
+    font-size: 14px;
+    color:#6C6C6C;
+}
+
+.tablelabel span{
+    color: red;
+}
+
+.tablecontent{
+    padding-left: 15px;
+}
+.tablecontent .sex {
+    float:left;
+    width:60px;
+    height:30px;
+    border:1px solid #D9DADB;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.women {
+    margin-left:13px;
+}
+
+.sex1 {
+    width: 0;
+    height: 0;
+    border-width:12px 15px 0 0px;
+    border-style:solid;
+    border-color:#00A934  transparent #00A934 transparent;
+    position: absolute;
+    top: 619px;
+}
+
+.sex2 {
+    width: 0;
+    height: 0;
+    display:none;
+    border-width:12px 15px 0 0px;
+    border-style:solid;
+    border-color:#00A934  transparent #00A934 transparent;
+    position: absolute;
+    top: 619px;
+    left: 495px;
+}
+
+.tablesavebtn{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.savebtn{
+    background: #00A934;
+    padding: 10px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    font-family: "微软雅黑";
+    font-size:18px;
+    color: #f3f3f3;
+    margin-left: 15px;
+    border: 1px solid #00A934;
+}
+.surprise{
+    color: #808080;
+    font-size: 12px;
+    padding-top: 1px;
+    margin-left: 100px;
+}
+.selectElement {
+    height: 30px;
+    width:70px;
+    margin-top:20px;
+}
+.timeperiod {
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.file{
+    height: 103px;
+    width: 103px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: red;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+
+}
+.file input{
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 999;
+}
+
+.file img{
+    position: absolute;
+    /*border-radius: 100%;*/
+    height: 100px;
+    left: 1px;
+    width: 100px;
+    right: 0;
+    top: 0;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>支付成功</title>
+    <link href="../css/weChatPay.css" rel="stylesheet" type="text/css">
+    <link href="../css/HeaderAndFooter.css" rel="stylesheet" type="text/css">
+    <link href="../css/bottomTag.css" rel="stylesheet" type="text/css">
+    <link href="../css/somepages.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <img src="../image/LOGO.png" alt="logo">
+    </div>
+    <div class="nav">
+        您好，欢迎光临我的菜场！
+    </div>
+    <div class="helpcenter">
+        <a href="#">帮助中心</a>
+    </div>
+</div>
+
+<div class="main">
+    <div class="layout">
+        <div class="crumbs">
+            <span>结算中心>微信支付</span>
+        </div>
+        <div class="content">
+            <div class="innerNav">
+                <div class="d1" id="tab1">使用微信支付<span class="span1">￥13.5</span></div>
+            </div>
+            <div class="tab1">
+                <div class="page">
+                    <img src="../image/paySuccess.png" class="payImg">
+                    <div class="wrap">
+                        <div class="tip1">支付成功！</div>
+                        <div class="tip2">已付款金额：<span class="span1">￥13.50</span></div>
+                        <a href="#" class="a1">查看订单详情</a>
+                        <a href="#" class="a2">再去逛逛</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--the footer of page-->
+<div class="footer">
+    <div class="footer_banner">
+        <ul>
+            <li>100%原产地</li>
+            <li>绿色安全</li>
+            <li>无理由退货</li>
+            <li>24X7配送</li>
+        </ul>
+    </div>
+
+    <div class="foot">
+        <div class="connectUs">
+            <ul>
+                <li><a href="#">关于我们</a> </li>
+                <li><a href="#">支付方式</a> </li>
+                <li><a href="#">联系我们</a> </li>
+            </ul>
+        </div>
+
+        <div class="bottomTag">
+            <div class="bottomContent">
+                <a href="#">沪ICP备13044278号</a>
+                <span>|</span>
+                <a href="#">合字B1.B2-2013004</a>
+                <span>|</span>
+                <a href="#">营业执照</a>
+                <span>|</span>
+                <a href="#">互联网药品信息服务资格证</a>
+                <span>|</span>
+                <a href="#">互联网药品交易服务资格证</a>
+            </div>
+        </div>
+        <div class="authority">
+            <span>Copyright©2016我的菜场，All Rights Reserved</span>
+        </div>
+    </div>
+</div>
+<!--the footer of page-->
+
+<!-- SuccessOrFail -->
+<!--<div class="cueMask">
+    <div id="curMask">
+    </div>
+</div>-->
+<!-- end of SuccessOrFail -->
+<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $(".vcode").click(function(){
+            $(this)[0].disabled=true;
+            $(this).css("cursor","default");
+            intervalId= setInterval("CountDown()",1000);
+        });
+        $("#tel").blur(function(){
+            var t=$(this).val();
+
+            if(t==""||t==null)
+            {
+                $("#telNull").css("display","block");
+            }
+            else
+            {
+                $("#telNull").css("display","none");
+            }
+
+
+        })
+        $("#ch").click(function(){
+            var dom=this.checked;
+            if(!dom)
+            {
+                $("input[type='submit']")[0].disabled=true;
+                $("#agree").css("display","inline");
+                $("input[type='submit']").css("cursor","default");
+            }
+            else
+            {
+                $("input[type='submit']")[0].disabled=false;
+                $("#agree").css("display","none");
+                $("input[type='submit']").css("cursor","pointer");
+            }
+
+        });
+
+        $("#tab1").click(function () {
+            $("#tab2").removeClass('tabselected');
+            $("#tab1").addClass('tabselected');
+            $(".tab2").css('display', 'none');
+            $(".tab1").css('display', 'block');
+        });
+
+        $("#tab2").click(function () {
+            $("#tab1").removeClass('tabselected');
+            $("#tab2").addClass('tabselected');
+            $(".tab1").css('display', 'none');
+            $(".tab2").css('display', 'block');
+        });
+    });
+
+    var intervalId;
+    var leftseconds = 119;
+    function CountDown()
+    {
+
+        var tag = $(".vcode")[0];
+        if (leftseconds <= 0)
+        {
+            tag.value = "发送验证码";
+            tag.disabled = false;
+            clearInterval(intervalId);
+            leftseconds = 119;
+
+        }
+        else {
+            tag.value =  leftseconds + "s";
+            leftseconds--;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>收货地址</title>
+    <link href="../css/MyAccountCommon.css" rel="stylesheet" type="text/css">
+    <link href="../css/DeliveryAddress.css" rel="stylesheet" type="text/css">
+    <link href="../css/HeaderAndFooter.css" rel="stylesheet" type="text/css">
+    <link href="../css/bottomTag.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--the top of page-->
+<div class="top">
+    <div class="top_nav">
+        <ul class="fl">
+            <li> 欢迎光临第二菜场！</li>
+            <li class="login"> <a href="#">登录</a></li>
+            <li class="register"><a href="#">注册</a></li>
+            <li class="cityDiv">配送至：<strong class="selectCity">南昌&nbsp;青山湖区</strong></li>
+        </ul>
+        <ul class="fr">
+            <li class="account_menu"><a href="#">我的账号</a><p></p>
+                <div class="navDown">
+                    <div><a href="#">个人资料</a> </div>
+                    <div><a href="#">我的订单</a> </div>
+                    <div><a href="#">账户资产</a> </div>
+                    <div><a href="#">好友推荐</a> </div>
+                    <div><a href="#">会员积分</a> </div>
+                    <div><a href="#">我的收藏</a> </div>
+                    <div><a href="#">我的留言</a> </div>
+                    <div><a href="#">售后服务</a> </div>
+                </div>
+
+            </li>
+            <li><a href="#">手机App</a></li>
+            <li><a href="#">帮助</a> </li>
+            <li><a href="#">关注</a></li>
+        </ul>
+    </div>
+</div>
+<!--the top of page-->
+<div class="header">
+    <div class="header_inner">
+        <div class="logo">
+            <img src="../image/LOGO.png" alt="logo">
+        </div>
+        <div class="index_promo"></div>
+        <div class="search">
+            <form action="">
+                <input type="text" class="text" placeholder="关键词">
+                <input type="submit" class="submit" value="搜索">
+            </form>
+
+            <div class="search_hot">
+                热门：<a href="#">樱桃</a>
+                <a href="#">皇帝菜</a>
+                <a href="#">海鲜</a>
+                <a href="#">西红柿</a>
+                <a href="#">食用油</a>
+            </div>
+        </div>
+        <div class="shopingcar">
+            <a href="#">我的购物车</a>
+            <b class="carnum">0</b>
+            <div class="shop_car" id="shopCar">
+                <div class="float_car">
+                    <div class="nopro">
+                        <p>购物车暂无商品</p>
+                        <p>
+                            <span>
+                                如您已添加商品，请<a href="#">登录</a>查看
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="mainNav">
+    <div class="navmenu">
+        <div class="categories">
+            <div class="dt">
+                <a href="#" class="topall">全部商品分类</a>
+            </div>
+
+        </div>
+        <div class="menu1">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">折扣区</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li><a href="#">积分商城</a><p></p></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="crumbs">
+    <span><a href="#">首页</a></span>
+    <span>></span>
+    <span><a href="#">我的菜场</a></span>
+</div>
+<div class="center">
+    <div class="left">
+        <div class="left_top">
+            <div>
+                <img src="../image/1.png" style="width:20px;height:20px">
+                <a href="#" style="margin-left:5px;font-weight:bold;">个人资料</a>
+            </div>
+        </div>
+        <div class="text"><a href="#">基本信息</a> </div>
+        <div class="text"><a href="#" class="select">送货地址</a> </div>
+        <div class="text"><a href="#">修改密码</a> </div>
+        <div class="nav"><img src="../image/2.png"><a href="#">我的订单</a></div>
+        <div class="nav"><img src="../image/3.png"><a href="#" >账户资产</a></div>
+        <div class="nav"><img src="../image/4.png"><a href="#">好友推荐</a></div>
+        <div class="nav"><img src="../image/5.png"><a href="#">会员积分</a></div>
+        <div class="nav"><img src="../image/6.png"><a href="#">我的收藏</a></div>
+        <div class="nav"><img src="../image/7.png"><a href="#">用户反馈</a></div>
+        <div class="nav"><img src="../image/8.png"><a href="#">售后服务</a></div>
+        <div class="nav"><img src="../image/9.png"><a href="#">评价回复</a></div>
+    </div>
+    <div class="InfoRight">
+        <div class="InfoTop">
+            <p>送货地址</p>
+            <span class="remind">您已创建10个收货地址，最多可创建20个</span>
+            <span class="addNewAddress">新增收货地址</span>
+        </div>
+        <div class="InfoBody">
+            <div class="addressDetail">
+                <div class="highlightInfo">
+                    <span class="nameInfo">徐雯雯&nbsp&nbsp&nbsp&nbsp江西省南昌市青山湖区</span>
+                    <span class="addrInfo">默认地址</span>
+                    <span class="closeTag">X</span>
+                </div>
+                <table class="InfoTable">
+                    <tr>
+                        <td class="tablelabel">收货人：</td>
+                        <td  class="tablecontent">徐雯雯</td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">所在地区：</td>
+                        <td class="tablecontent">江西省南昌市青山湖区</td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">地址：</td>
+                        <td class="tablecontent">建设路虎号小区0栋21好号e单元</td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">手机：</td>
+                        <td class="tablecontent">13623211234</td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">固定电话：</td>
+                        <td class="tablecontent">123456789</td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">电子邮箱：</td>
+                        <td class="tablecontent">23123131231@sad.com</td>
+                    </tr>
+                    <div class="controlTag">
+                        <span class="default">设为默认</span>
+                        <span>&nbsp;&nbsp;</span>
+                        <span class="edit">编辑</span>
+                    </div>
+                </table>
+
+            </div>
+            <div class="addressDetail">
+                <div class="highlightInfo">
+                    <span class="nameInfo">徐雯雯&nbsp&nbsp&nbsp&nbsp江西省南昌市青山湖区</span>
+                    <!--<span class="addrInfo">默认地址</span>-->
+                    <span class="closeTag">X</span>
+                </div>
+                <table class="InfoTable">
+                    <tr>
+                        <td class="tablelabel">收货人：</td>
+                        <td  class="tablecontent">徐雯雯</td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">所在地区：</td>
+                        <td class="tablecontent">江西省南昌市青山湖区</td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">地址：</td>
+                        <td class="tablecontent">建设路虎号小区0栋21好号e单元</td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">手机：</td>
+                        <td class="tablecontent">13623211234</td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">固定电话：</td>
+                        <td class="tablecontent">123456789</td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">电子邮箱：</td>
+                        <td class="tablecontent">23123131231@sad.com</td>
+                    </tr>
+                    <div class="controlTag">
+                        <span class="dodefault">设为默认</span>
+                        <span>&nbsp;&nbsp;</span>
+                        <span class="edit">编辑</span>
+                    </div>
+                </table>
+            </div>
+            <div class="tablesavebtn">
+                <input type="submit" value="新增收货地址" class="savebtn" id="savebtn"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!--the footer of page-->
+<div class="footer">
+    <div class="footer_banner">
+        <ul>
+            <li>100%原产地</li>
+            <li>绿色安全</li>
+            <li>无理由退货</li>
+            <li>24X7配送</li>
+        </ul>
+    </div>
+
+    <div class="foot">
+        <div class="connectUs">
+            <ul>
+                <li><a href="#">关于我们</a> </li>
+                <li><a href="#">支付方式</a> </li>
+                <li><a href="#">联系我们</a> </li>
+            </ul>
+        </div>
+        <div class="bottomTag">
+            <div class="bottomContent">
+                <a href="#">沪ICP备13044278号</a>
+                <span>|</span>
+                <a href="#">合字B1.B2-2013004</a>
+                <span>|</span>
+                <a href="#">营业执照</a>
+                <span>|</span>
+                <a href="#">互联网药品信息服务资格证</a>
+                <span>|</span>
+                <a href="#">互联网药品交易服务资格证</a>
+            </div>
+        </div>
+        <div class="authority">
+            <span>Copyright©2016我的菜场，All Rights Reserved</span>
+        </div>
+    </div>
+</div>
+<!--the footer of page-->
+<!--district select-->
+<div class="mask"></div>
+<div id="maskLayer">
+    <div id="drag">
+        <h3 id="drag_h">
+            <b>地区选择</b><span id="close">X</span>
+        </h3>
+        <div id="drag_con">
+            <div id="city2">
+                省份：<select class="prov"></select>
+                &nbsp; 市区选择：<select class="city"></select>
+                <select class="dist"></select>
+                <button id="btn" style="position: absolute;right: 10px;cursor: pointer;">确定</button>
+            </div>
+        </div>
+        <div class="distSelect">
+            <div>区域选择:</div>
+            <ul>
+                <li>林芝地铁站</li>
+                <li>海兵广场</li>
+                <li>缤纷商城圈</li>
+                <li>宝安体育中心</li>
+                <li>翻身创业天虹</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--end of district select-->
+
+<!-- deliveryAddress -->
+<div class="addressMask"></div>
+<div id="addressMaskLayer">
+    <div class="addAddressBar">
+        <span class="addTitle">新增收货地址</span>
+        <span class="addRemind">您已创建10个收货地址，最多可创建20个</span>
+        <span class="closeAddTag">x</span>
+    </div>
+    <div class="addAddressContent">
+        <div class="smallArea">
+            <span class="label">收货人：</span><br>
+            <input type="text" class="shouhuoreninput">
+            <span id="namerror">*请填写收货人姓名</span>
+        </div>
+        <div class="smallArea">
+            <span class="label">所在地区：</span><br>
+            <div id="selectarea">
+                <select class="addSelectElement prov"><!--<option>选择省份</option>--></select>
+                <select class="addSelectElement city"><!--<option>选择城市</option>--></select>
+                <select class="addSelectElement dist"><!--<option>选择街道</option>--></select>
+            </div>
+        </div>
+        <div class="smallArea">
+            <span class="label">*详细地址：</span><br>
+            <input type="text" class="xiangxidizhiinput">
+            <span id="addresserror">*请填写收货人地址</span>
+        </div>
+        <div class="smallArea">
+            <span class="label">手机号码：</span>
+            <span class="label">固定电话：</span><br>
+            <input type="text" class="shoujihaomainput">
+            <span class="huospan">或</span>
+            <input type="text" class="gudingdianhuainput">
+            <span id="phonenumbererror">*手机号码不能为空</span>
+            <span id="phonenumberformaterror">*手机号码格式不正确</span>
+        </div>
+        <div class="smallArea">
+            <span class="label">电子邮箱：</span><br>
+            <input type="text" class="dianziyouxianginput">
+        </div>
+        <input type="button" value="保存" class="smallArea addNewAddressButton" id="saveNewAddr">
+    </div>
+</div>
+<!--end of deliveryAddress -->
+
+<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="../js/jquery.cityselect.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //购物车显示效果
+        $(".shopingcar").mouseover(function(){
+            var obj=$("#shopCar");
+            $(obj).css("display","block");
+            $(obj).css("left",this.clientX);
+            $(obj).css("top",this.clientY+10);
+        }).mouseout(function(){
+            $("#shopCar").css("display","none");
+        });
+
+        //下拉框
+        $(".navDown").parent().hover(function(){
+            $(".fr p").addClass("hover");
+
+            $(this).find(".navDown").slideDown("normal");
+        },function(){
+            $(".fr p").removeClass("hover");
+            $(this).find(".navDown").stop().slideUp("normal");
+        });
+
+
+        //地区选择
+        $(".cityDiv").click(function () {
+
+            $("#maskLayer").css("left", ($(window).width() - $("#maskLayer").outerWidth()) / 2);
+            $("#maskLayer").css("top", "120px");
+            $(".mask").css({
+                "display": "block",
+                "height": $(document).height()
+            });
+            $("#maskLayer").css("display", "block");
+            $("#city2").citySelect({
+
+                //required: false
+                prov: "江西",
+                city: "南昌",
+                dist: "青山湖区",
+                nodata: "none"
+            });
+
+        });
+        $("#btn").click(function () {
+            if( $(".dist").val()!=null)
+                $(".selectCity").html($(".city").val() + " " + $(".dist").val());
+            else
+                $(".selectCity").html($(".prov").val() + " " + $(".city").val());
+            $("#maskLayer").css("display", "none");
+            $(".mask").css({
+                "display": "none"
+
+            });
+            //alert($(".city").val()+" "+$(".dist").val());
+        })
+        $("#close").click(function () {
+            $("#maskLayer").css("display", "none");
+            $(".mask").css({
+                "display": "none"
+
+            });
+        });
+        $(".innerNav>div").click(function(){
+            $(".innerNav>div").removeClass("select");
+            $(this).addClass("select");
+            var $id=$(this).attr("id");
+            var $class="."+$id;
+            $(".content,.content1,.content2").css("display","none");
+            $($class).css("display","block");
+        });
+
+        $("#all").click(function(){
+            var result=this.checked;
+
+            if(result)
+            {
+
+                $(".good").find("input[type='checkbox']").each(function(index,value){
+                    this.checked=true;
+                });
+                $(".operation").find("span").find("input[type='checkbox']")[0].checked=true;
+            }
+            else
+            {
+
+                $(".good").find("input[type='checkbox']").each(function(index,value){
+                    this.checked=false;
+                });
+                $(".operation").find("span").find("input[type='checkbox']")[0].checked=false;
+            }
+        });
+        $("#all2").click(function(){
+            var re=this.checked;
+            if(re)
+            {
+                $(".good").find("input[type='checkbox']").each(function(index,value){
+                    this.checked=true;
+                });
+                $("#all")[0].checked=true;
+            }
+            else
+            {
+                $(".good").find("input[type='checkbox']").each(function(index,value){
+                    this.checked=false;
+                });
+                $("#all")[0].checked=false;
+            }
+        });
+
+        //input错误提示
+        $("#saveNewAddr").click(function(){
+            if(!$('.shouhuoreninput').val()) {
+                $('#namerror').css('display','inline');
+            }
+            else{
+                $('#namerror').css('display','none');
+            }
+            if(!$('.xiangxidizhiinput').val()){
+                $('#addresserror').css('display','inline');
+            }
+            else{
+                $('#addresserror').css('display','none');
+            }
+            if(!$('.shoujihaomainput').val()){
+                $('#phonenumbererror').css('display','inline');
+            }
+            else{
+                $('#phonenumbererror').css('display','none');
+            }
+        });
+        $(".shouhuoreninput").keydown(function(){
+            $('#namerror').css('display','none');
+        });
+        $(".xiangxidizhiinput").keydown(function(){
+            $('#addresserror').css('display','none');
+        });
+        $(".shoujihaomainput").keydown(function(){
+            $('#phonenumbererror').css('display','none');
+        });
+        $(".shoujihaomainput").blur(function(){
+            if(!$('.shoujihaomainput').val().match(/^(((13[0-9]{1})|159|153)+\d{8})$/)){
+                $('#phonenumbererror').css('display','none');
+                $('#phonenumberformaterror').css('display','inline');
+                if(!$('.shoujihaomainput').val()){
+                    $('#phonenumberformaterror').css('display','none');
+                }
+            }
+            else{
+                $('#phonenumberformaterror').css('display','none');
+            }
+        });
+
+
+        //新增收货地址
+        $("#savebtn").click(function () {
+            $("#addressMaskLayer").css("left", ($(window).width() - $("#addressMaskLayer").outerWidth()) / 2);
+            $("#addressMaskLayer").css("top", "350px");
+            $(".addressMask").css({
+                "display": "block",
+                "height": $(document).height()
+            });
+            $("#addressMaskLayer").css("display", "block");
+            //选择框地址
+            $("#selectarea").citySelect({
+                //required: false
+                prov: "江西",
+                city: "南昌",
+                dist: "青山湖区",
+                nodata: "none"
+            });
+
+        });
+        /*$("#savebtn").click(function () {
+         $("#addressMaskLayer").css("display", "none");
+         $(".addressMask").css({
+         "display": "none"
+         });
+         //alert($(".city").val()+" "+$(".dist").val());
+         })*/
+        $(".closeAddTag").click(function () {
+            $("#addressMaskLayer").css("display", "none");
+            $(".addressMask").css({
+                "display": "none"
+            });
+        });
+    })
+
+
+
+
+</script>
+</body>
+</html>

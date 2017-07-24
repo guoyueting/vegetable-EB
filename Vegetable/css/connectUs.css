@@ -1,0 +1,394 @@
+/*part of common*/
+html,body,div,h1,h2,h3,h4,ul,p,img{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color:#666666;
+    opacity: 0.8;
+}
+
+body{
+    min-width: 1200px;
+    font: 14px/150% Arial, Verdana, "宋体";
+}
+
+.top{
+    height:50px ;
+    background-color: #F2F2F2;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 101;
+
+}
+.top_nav{
+    /*float: left;
+    line-height: 50px;
+    margin-left: 40px;
+   font-size: 14px;*/
+    width: 1200px;
+    margin: auto;
+
+
+}
+
+.login{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.login a{
+    color: #01BC38;
+}
+.register{
+    padding-right: 15px;
+}
+.register a{
+    color: #01BC38;
+}
+.fl{
+    float: left;
+}
+
+.fl li{
+    float: left;
+    position: relative;
+    line-height: 50px;
+    color: #666666;
+    opacity: 0.8;
+}
+.cityDiv{
+    margin-left: 25px;
+}
+.fl strong{
+    color: #000000;
+
+}
+.fr{
+    float: right;
+}
+
+.fr li{
+    float: left;
+    position: relative;
+    line-height: 50px;
+    padding: 0 10px;
+
+}
+.fr li a{
+    color: #333333;
+}
+.account_menu{
+    padding: 0 10px 0 10px;
+    width: 60px;
+    cursor: default;
+    line-height: 50px;
+}
+.navDown{
+    margin-left: 5px;
+    line-height: 22px;
+    left: 0;
+    width: 78px;
+    -moz-box-shadow: 0 0 5px #dadada;
+    -webkit-box-shadow: 0 0 5px #dadada;
+    box-shadow: 0 0 5px #dadada;
+    top:40px;
+
+    display: none;
+    border: 1px solid #F2F2F2;
+
+    background-color: #ffffff;
+    position: absolute;
+}
+
+/*.navDown div:hover{*/
+    /*background-color: #F2F2F2;*/
+/*}*/
+.navDown div:hover{
+    background-color: #01BC39;
+    color: #ffffff;
+}
+.navDown div>a:hover{
+    color: #ffffff;
+}
+.fr p{
+    position: absolute;
+    right: 2px;
+    top: 18px;
+    background: url("../image/arrow.png") no-repeat  ;
+    transition: transform .2s ease-in 0s;
+    -webkit-transition: -webkit-transform .2sease-in 0s;
+    overflow: hidden;
+    height: 9px;
+    width: 9px;
+    vertical-align: middle;
+}
+
+.hover{
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    /*background:url(../image/arrow.png) no-repeat -169px -2px;*/
+}
+
+#maskLayer{
+    display:none;
+    position:absolute;
+    width:600px;
+    height:300px;
+    z-index:2001;
+    background-color:#fff
+}
+
+#drag_h{
+    height:50px;
+    line-height:50px;
+    background-color:#fff;
+    border-bottom:2px dotted #808080;
+    padding-left:30px;
+}
+#drag_h b{
+    float:left;
+
+}
+#drag_h span{
+
+    float:right;
+    cursor:pointer;
+    height:20px;
+    width:20px;
+    border-radius:10px;
+    background-color:#808080;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+#drag_con,#city2{
+    padding:10px 4px;
+    padding-left:30px;
+}
+#drag_con{
+    border-bottom: 2px dotted #808080;
+}
+.mask {
+    background-color: #666666;
+    position: absolute;
+    z-index: 800;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+}
+
+.distSelect,.distSelect div,.distSelect ul{
+    padding:10px 4px;
+    padding-left:30px
+}
+.distSelect div{
+    font-size: 14px;
+    font-weight: bold;
+}
+.distSelect li{
+    float: left;
+    padding-right: 20px;
+}
+.selectCity{
+    cursor: pointer;
+}
+
+.header{
+    height: 104px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.header_inner{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 31;
+}
+.header_inner .logo{
+    width: 200px;
+    float: left;
+    position: relative;
+    height: 104px;
+    display: flex;
+    align-items: center;
+}
+.header_inner .logo img{
+    width: 200px;
+    height: 66px;
+    vertical-align: middle;
+
+}
+.header_inner .search{
+    width: 600px;
+    height: 104px;
+    line-height: 104px;
+    float: right;
+    position: relative;
+
+}
+.header_inner .search .text{
+
+    width: 496px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    border: 2px solid #00A934;
+    outline: none;
+
+}
+.header_inner .search .btn{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 42px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid  #00A934;
+    outline: none;
+    background-color: #00A934;
+    color: #ffffff;
+    position: absolute;
+    top:31px;
+    cursor: pointer;
+
+
+}
+
+
+
+.cUs{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    border-bottom: 1px solid #A1A1A1;
+    font-weight: bold;
+}
+.alladdress{
+
+    width: 1200px;
+    height: 465px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.alladdress div{
+    height: 100%;
+    width: 600px;
+    float: left;
+}
+.alladdress div div{
+    width: 560px;
+    height: 370px;
+    border: 1px solid #A1A1A1;
+}
+.alladdress .d1 .p1{
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tel{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+}
+.tel .p2{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/*part of common  top*/
+
+
+
+/*part of common  footer*/
+.footer{
+    width: 100%;
+    line-height: 18px;
+    overflow: hidden;
+    color: #000;
+    margin-top: 20px;
+}
+
+.footer .footer_banner{
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer .footer_banner ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .footer_banner ul li{
+    float: left;
+    /*font-weight: bold;*/
+    font-size: 20px;
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #F0F0F0;
+    color: #555555;
+    opacity: 0.8;
+}
+
+.footer .foot{
+    width: 100%;
+    height: 136px;
+}
+.footer .foot .connectUs{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+.footer .foot .connectUs ul{
+    width:300px ;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.footer .foot .connectUs ul li{
+    float: left;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 20px;
+
+
+
+}
+.footer .foot .connectUs ul li a{
+    color: #333333;
+}
+.footer .foot_img{
+    width: 1200px;
+    height: 56px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+.footer .foot_img img{
+    width: 919px;
+    height: 56px;
+    margin-left: 140px;
+    position: absolute;
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <link href="../css/MyAccountCommon.css" type="text/css" rel="stylesheet">
+    <link href="../css/CommentReply.css" rel="stylesheet" type="text/css">
+    <link href="../css/MyOrder.css" rel="stylesheet" type="text/css">
+    <link href="../css/HeaderAndFooter.css" rel="stylesheet" type="text/css">
+    <link href="../css/bottomTag.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--the top of page-->
+<div class="top">
+    <div class="top_nav">
+        <ul class="fl">
+            <li> 欢迎光临第二菜场！</li>
+            <li class="login"> <a href="#">登录</a></li>
+            <li class="register"><a href="#">注册</a></li>
+            <li class="cityDiv">配送至：<strong class="selectCity">南昌&nbsp;青山湖区</strong></li>
+        </ul>
+        <ul class="fr">
+            <li class="account_menu"><a href="#">我的账号</a><p></p>
+                <div class="navDown">
+                    <div><a href="#">个人资料</a> </div>
+                    <div><a href="#">我的订单</a> </div>
+                    <div><a href="#">账户资产</a> </div>
+                    <div><a href="#">好友推荐</a> </div>
+                    <div><a href="#">会员积分</a> </div>
+                    <div><a href="#">我的收藏</a> </div>
+                    <div><a href="#">我的留言</a> </div>
+                    <div><a href="#">售后服务</a> </div>
+                </div>
+
+            </li>
+            <li><a href="#">手机App</a></li>
+            <li><a href="#">帮助</a> </li>
+            <li><a href="#">关注</a></li>
+        </ul>
+    </div>
+</div>
+<!--the top of page-->
+<div class="header">
+    <div class="header_inner">
+        <div class="logo">
+            <img src="../image/LOGO.png" alt="logo">
+        </div>
+        <div class="index_promo"></div>
+        <div class="search">
+            <form action="">
+                <input type="text" class="text" placeholder="关键词">
+                <input type="submit" class="submit" value="搜索">
+            </form>
+
+            <div class="search_hot">
+                热门：<a href="#">樱桃</a>
+                <a href="#">皇帝菜</a>
+                <a href="#">海鲜</a>
+                <a href="#">西红柿</a>
+                <a href="#">食用油</a>
+            </div>
+        </div>
+        <div class="shopingcar">
+            <a href="#">我的购物车</a>
+            <b class="carnum">0</b>
+            <div class="shop_car" id="shopCar">
+                <div class="float_car">
+                    <div class="nopro">
+                        <p>购物车暂无商品</p>
+                        <p>
+                            <span>
+                                如您已添加商品，请<a href="#">登录</a>查看
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="mainNav">
+    <div class="navmenu">
+        <div class="categories">
+            <div class="dt">
+                <a href="#" class="topall">全部商品分类</a>
+            </div>
+
+        </div>
+        <div class="menu1">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">折扣区</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li><a href="#">积分商城</a><p></p></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="crumbs">
+    <span><a href="#">首页</a></span>
+    <span>></span>
+    <span><a href="#">我的订单</a></span>
+</div>
+<div class="center">
+    <div class="left">
+        <div class="left_top">
+            <div>
+                <img src="../image/1.png" style="width:20px;height:20px">
+                <a href="#" style="margin-left:5px;font-weight:bold;">个人资料</a>
+            </div>
+        </div>
+        <div class="text"><a href="#">基本信息</a> </div>
+        <div class="text"><a href="#">送货地址</a> </div>
+        <div class="text"><a href="#">修改密码</a> </div>
+        <div class="nav"><img src="../image/2a.png"><a href="#" class="select">我的订单</a></div>
+        <div class="nav"><img src="../image/3.png"><a href="#" >账户资产</a></div>
+        <div class="nav"><img src="../image/4.png"><a href="#">好友推荐</a></div>
+        <div class="nav"><img src="../image/5.png"><a href="#">会员积分</a></div>
+        <div class="nav"><img src="../image/6.png"><a href="#">我的收藏</a></div>
+        <div class="nav"><img src="../image/7.png"><a href="#">用户反馈</a></div>
+        <div class="nav"><img src="../image/8.png"><a href="#">售后服务</a></div>
+        <div class="nav"><img src="../image/9.png"><a href="#">评价回复</a></div>
+    </div>
+    <div class="right">
+        <div class="info">
+            <div class="innerNav">
+                <div class="d1 select" id="tab1">全部订单(<span>8</span>)</div>
+                <div class="d2" id="tab2">待付款(<span>8</span>)</div>
+                <div class="d3" id="tab3">待签收(<span>8</span>)</div>
+                <div class="d4" id="tab4">已完成(<span>8</span>)</div>
+                <div class="d5" id="tab5">已取消(<span>8</span>)</div>
+                <div class="d6" id="tab6">退货清单(<span>8</span>)</div>
+            </div>
+            <div class="fixedBar">
+                <span class="label label1">商品</span>
+                <span class="label label2">单价</span>
+                <span class="label label3">数量</span>
+                <span class="label label4">实际付款</span>
+                <span class="label label5">交易状态</span>
+                <span class="label label6">操作</span>
+            </div>
+            <div class="tab1">
+                <div class="orderBody">
+                     <div class="orderBar">
+                         <span class="span1">2015-12-26 20:00:28</span>
+                         <span class="span2">订单号:100128820434</span>
+                         <span class="span3">在线支付</span>
+                     </div>
+                     <div class="orderContent">
+                         <div class="productInfo">
+                             <img src="" alt="商品">
+                             <p>包邮&nbsp;&nbsp;
+                                 新货&nbsp;&nbsp;美国进口山核桃仁碧耕果长寿果908g新货
+                             </p>
+                         </div>
+                         <div class="singlePrice">￥5.5</div>
+                         <div class="number">X 1</div>
+                         <div class="totalPayment">
+                             <span>总额:</span>
+                             <span class="price">￥4.5</span>
+                         </div>
+                         <div class="TradeStatus">
+                             <span>已完成</span>
+                             <a class="orderDetail" href="#">订单详情</a>
+                         </div>
+                         <div class="operation">
+                             <a href="#" style="display:block">评论晒单</a>
+                             <a href="#">退换货</a>
+                         </div>
+                     </div>
+                 </div>
+                <div class="orderBody">
+                    <div class="orderBar">
+                        <span class="span1">2015-12-26 20:00:28</span>
+                        <span class="span2">订单号:100128820434</span>
+                        <span class="span3">在线支付</span>
+                    </div>
+                    <div class="orderContent">
+                        <div class="orderContentLeft">
+                            <div class="toPay">
+                                <div class="productInfo">
+                                    <img src="" alt="商品">
+                                    <p>包邮&nbsp;&nbsp;
+                                        新货&nbsp;&nbsp;美国进口山核桃仁碧耕果长寿果908g新货
+                                    </p>
+                                </div>
+                                <div class="singlePrice">￥5.5</div>
+                                <div class="number">X 1</div>
+                            </div>
+                            <div class="toPay">
+                                <div class="productInfo">
+                                    <img src="" alt="商品">
+                                    <p>包邮&nbsp;&nbsp;
+                                        新货&nbsp;&nbsp;美国进口山核桃仁碧耕果长寿果908g新货
+                                    </p>
+                                </div>
+                                <div class="singlePrice">￥5.5</div>
+                                <div class="number">X 1</div>
+                            </div>
+                        </div>
+                        <div class="orderContentRight">
+                            <div class="totalPayment">
+                                <span>总额:</span>
+                                <span class="price">￥4.5</span>
+                            </div>
+                            <div class="TradeStatus">
+                                <span>等待付款</span>
+                                <a class="orderDetail" href="#">订单详情</a>
+                            </div>
+                            <div class="operation">
+                                <span>删除</span>
+                                <input class="goToPay" value="去付款"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="orderBody">
+                    <div class="orderBar">
+                        <span class="span1">2015-12-26 20:00:28</span>
+                        <span class="span2">订单号:100128820434</span>
+                        <span class="span3">在线支付</span>
+                    </div>
+                    <div class="orderContent">
+                        <div class="orderContentLeft">
+                            <div class="toPay">
+                                <div class="productInfo">
+                                    <img src="" alt="商品">
+                                    <p>包邮&nbsp;&nbsp;
+                                        新货&nbsp;&nbsp;美国进口山核桃仁碧耕果长寿果908g新货
+                                    </p>
+                                </div>
+                                <div class="singlePrice">￥5.5</div>
+                                <div class="number">X 1</div>
+                            </div>
+                            <div class="toPay">
+                                <div class="productInfo">
+                                    <img src="" alt="商品">
+                                    <p>包邮&nbsp;&nbsp;
+                                        新货&nbsp;&nbsp;美国进口山核桃仁碧耕果长寿果908g新货
+                                    </p>
+                                </div>
+                                <div class="singlePrice">￥5.5</div>
+                                <div class="number">X 1</div>
+                            </div>
+                        </div>
+                        <div class="orderContentRight">
+                            <div class="totalPayment">
+                                <span>总额:</span>
+                                <span class="price">￥4.5</span>
+                            </div>
+                            <div class="TradeStatus">
+                                <span>等待签收</span>
+                                <a class="orderDetail" href="#">订单详情</a>
+                            </div>
+                            <div class="operation">
+                                <span>删除</span>
+                                <input class="goToSign" value="确认收货"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab2">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--the footer of page-->
+<div class="footer">
+    <div class="footer_banner">
+        <ul>
+            <li>100%原产地</li>
+            <li>绿色安全</li>
+            <li>无理由退货</li>
+            <li>24X7配送</li>
+        </ul>
+    </div>
+
+    <div class="foot">
+        <div class="connectUs">
+            <ul>
+                <li><a href="#">关于我们</a> </li>
+                <li><a href="#">支付方式</a> </li>
+                <li><a href="#">联系我们</a> </li>
+            </ul>
+        </div>
+        <div class="bottomTag">
+            <div class="bottomContent">
+                <a href="#">沪ICP备13044278号</a>
+                <span>|</span>
+                <a href="#">合字B1.B2-2013004</a>
+                <span>|</span>
+                <a href="#">营业执照</a>
+                <span>|</span>
+                <a href="#">互联网药品信息服务资格证</a>
+                <span>|</span>
+                <a href="#">互联网药品交易服务资格证</a>
+            </div>
+        </div>
+        <div class="authority">
+            <span>Copyright©2016我的菜场，All Rights Reserved</span>
+        </div>
+    </div>
+</div>
+<!--the footer of page-->
+<!--district select-->
+<div class="mask"></div>
+<div id="maskLayer">
+    <div id="drag">
+        <h3 id="drag_h">
+            <b>地区选择</b><span id="close">X</span>
+        </h3>
+        <div id="drag_con">
+            <div id="city2">
+                省份：<select class="prov"></select>
+                &nbsp; 市区选择：<select class="city"></select>
+                <select class="dist"></select>
+                <button id="btn" style="position: absolute;right: 10px;cursor: pointer;">确定</button>
+            </div>
+        </div>
+        <div class="distSelect">
+            <div>区域选择:</div>
+            <ul>
+                <li>林芝地铁站</li>
+                <li>海兵广场</li>
+                <li>缤纷商城圈</li>
+                <li>宝安体育中心</li>
+                <li>翻身创业天虹</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--end of district select-->
+
+<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="../js/jquery.cityselect.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //购物车显示效果
+        $(".shopingcar").mouseover(function(){
+            var obj=$("#shopCar");
+            $(obj).css("display","block");
+            $(obj).css("left",this.clientX);
+            $(obj).css("top",this.clientY+10);
+        }).mouseout(function(){
+            $("#shopCar").css("display","none");
+        });
+
+        //下拉框
+        $(".navDown").parent().hover(function(){
+            $(".fr p").addClass("hover");
+
+            $(this).find(".navDown").slideDown("normal");
+        },function(){
+            $(".fr p").removeClass("hover");
+            $(this).find(".navDown").stop().slideUp("normal");
+        });
+
+
+        //地区选择
+        $(".cityDiv").click(function () {
+
+            $("#maskLayer").css("left", ($(window).width() - $("#maskLayer").outerWidth()) / 2);
+            $("#maskLayer").css("top", "120px");
+            $(".mask").css({
+                "display": "block",
+                "height": $(document).height()
+            });
+            $("#maskLayer").css("display", "block");
+            $("#city2").citySelect({
+
+                //required: false
+                prov: "江西",
+                city: "南昌",
+                dist: "青山湖区",
+                nodata: "none"
+            });
+
+        });
+        $("#btn").click(function () {
+            if( $(".dist").val()!=null)
+                $(".selectCity").html($(".city").val() + " " + $(".dist").val());
+            else
+                $(".selectCity").html($(".prov").val() + " " + $(".city").val());
+            $("#maskLayer").css("display", "none");
+            $(".mask").css({
+                "display": "none"
+
+            });
+            //alert($(".city").val()+" "+$(".dist").val());
+        })
+        $("#close").click(function () {
+            $("#maskLayer").css("display", "none");
+            $(".mask").css({
+                "display": "none"
+
+            });
+        });
+        $(".innerNav>div").click(function(){
+            $(".innerNav>div").removeClass("select");
+            $(this).addClass("select");
+            var $id=$(this).attr("id");
+            var $class="."+$id;
+            $(".tab1,.tab2").css("display","none");
+            $($class).css("display","block");
+        });
+
+        $("#all").click(function(){
+            var result=this.checked;
+
+            if(result)
+            {
+
+                $(".good").find("input[type='checkbox']").each(function(index,value){
+                    this.checked=true;
+                });
+                $(".operation").find("span").find("input[type='checkbox']")[0].checked=true;
+            }
+            else
+            {
+
+                $(".good").find("input[type='checkbox']").each(function(index,value){
+                    this.checked=false;
+                });
+                $(".operation").find("span").find("input[type='checkbox']")[0].checked=false;
+            }
+        });
+        $("#all2").click(function(){
+            var re=this.checked;
+            if(re)
+            {
+                $(".good").find("input[type='checkbox']").each(function(index,value){
+                    this.checked=true;
+                });
+                $("#all")[0].checked=true;
+            }
+            else
+            {
+                $(".good").find("input[type='checkbox']").each(function(index,value){
+                    this.checked=false;
+                });
+                $("#all")[0].checked=false;
+            }
+        });
+
+
+
+    })
+
+
+
+
+</script>
+</body>
+</html>

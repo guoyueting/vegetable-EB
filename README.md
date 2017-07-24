@@ -1,2 +1,14 @@
 # vegetable-EB
-Electronic Business web front-end
+- 电商网站PC端前端页面
+
+-  1.登录
+
+- 2.主页
+
+- 3.我的账号
+
+- 4.运营页面
+
+- 5.通用页面
+ 
+- 6.关于我们

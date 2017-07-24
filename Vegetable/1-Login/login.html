@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
+    <link href="../css/bottomTag.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <img src="../image/LOGO.png" alt="logo">
+    </div>
+    <div class="nav">
+        欢迎登陆
+    </div>
+</div>
+
+<div class="main">
+    <div class="login_inner">
+        <div class="login">
+            <div class="title">请登陆我菜场</div>
+            <div class="login_form">
+                <form action="">
+                    <div class="user">
+                     <img src="../image/loginUser.png">
+                    <input type="text" id="telNum" placeholder=" 请输入手机号">
+                    </div>
+                    <p style="color: red;display: none;font-size: 10px;position: absolute;top: 47px;" id="null">手机号不能为空</p>
+                    <p style="color: red;display: none;" id="exist">用户不存在</p>
+                    <div class="pwd">
+                        <img src="../image/loginPwd.png">
+                        <input type="password" id="psw" placeholder=" 请输入密码">
+                    </div>
+
+
+                    <p style="color: red;display: none;font-size: 10px;position: absolute;top: 107px;"  id="pnull">密码不能为空</p>
+                    <p style="color: red;display: none;font-size: 10px;position: absolute;top: 107px;" id="error">您输入的密码有误！</p>
+
+                    <div class="validateCode">
+                        <input type="text" id="vCode" placeholder="请输入验证码">
+                        <img src="" alt="验证码"  >
+                        <span class="change"><a href="#">看不清？换一张</a></span>
+                    </div>
+                    <p style="color: red;display: none" id="verror">验证码错误！</p>
+                    <div class="check">
+                        <input type="checkbox" checked="checked"><span>自动登陆</span><span class="forget"><a>忘记密码?</a></span>
+                    </div>
+                    <div class="sure">
+                        <input type="submit" value="登录" class="logins">
+                        <input type="button" value="免费注册" class="register">
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+<!--the footer of page-->
+<div class="footer">
+    <div class="foot">
+        <div class="connectUs">
+            <ul>
+                <li><a href="#">关于我们</a> </li>
+                <li><a href="#">支付方式</a> </li>
+                <li><a href="#">联系我们</a> </li>
+            </ul>
+        </div>
+
+        <div class="bottomTag">
+            <div class="bottomContent">
+                <a href="#">沪ICP备13044278号</a>
+                <span>|</span>
+                <a href="#">合字B1.B2-2013004</a>
+                <span>|</span>
+                <a href="#">营业执照</a>
+                <span>|</span>
+                <a href="#">互联网药品信息服务资格证</a>
+                <span>|</span>
+                <a href="#">互联网药品交易服务资格证</a>
+            </div>
+        </div>
+        <div class="authority">
+            <span>Copyright©2016我的菜场，All Rights Reserved</span>
+        </div>
+    </div>
+</div>
+<!--the footer of page-->
+<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+<script>
+$(document).ready(function(){
+    $("#telNum").blur(function(){
+        var num= $("#telNum").val();
+        if(num==""||num==null)
+            $("#null").css("display","block");
+        else
+            $("#null").css("display","none");
+    });
+    $("#psw").blur(function () {
+        var psw=$("#psw").val();
+
+        if(psw==""||psw==null)
+            $("#pnull").css("display","block");
+        else
+            $("#pnull").css("display","none");
+    })
+
+    $("input[type='submit']").click(function(e){
+
+       var num= $("#telNum").val();
+        if(num==""||num==null)
+        {
+            $("#null").css("display","block");
+            return;
+        }
+        var psw=$("#psw").val();
+        if(psw==""||psw==null) {
+            $("#pnull").css("display", "block");
+            return;
+        }
+    });
+    $(".sure").find("input[type='button']").click(function(){
+        location.href="./register.html";
+    });
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+/*part of common*/
+html,body,div,h1,h2,h3,h4,ul,p,img{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: #666666;
+}
+
+body{
+    min-width: 1200px;
+    font: 14px/150% Arial, Verdana, "宋体";
+}
+
+.top{
+    height:50px ;
+    background-color: #F2F2F2;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 101;
+
+}
+.top a{
+    color: #666666;
+    opacity: 0.8;
+}
+.top_nav{
+    /*float: left;
+    line-height: 50px;
+    margin-left: 40px;
+   font-size: 14px;*/
+    width: 1200px;
+    margin: auto;
+
+
+}
+
+.login{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.register{
+    padding-right: 15px;
+}
+.login a{
+    color: #01BC38;
+}
+.register a{
+    color: #01BC38;
+}
+.fl{
+    float: left;
+}
+
+.fl li{
+    float: left;
+    position: relative;
+    line-height: 50px;
+    color: #666666;
+    opacity: 0.8;
+}
+.cityDiv{
+    margin-left: 25px;
+}
+.fr{
+    float: right;
+}
+
+.fr li{
+    float: left;
+    position: relative;
+    line-height: 50px;
+    padding: 0 10px;
+
+}
+.fr li a{
+    color: #333333;
+}
+.account_menu{
+    padding: 0 10px 0 10px;
+    width: 60px;
+    cursor: default;
+    line-height: 50px;
+}
+.navDown{
+    margin-left: 5px;
+    line-height: 22px;
+    left: 0;
+    width: 78px;
+    -moz-box-shadow: 0 0 5px #dadada;
+    -webkit-box-shadow: 0 0 5px #dadada;
+    box-shadow: 0 0 5px #dadada;
+    top:40px;
+
+    display: none;
+    border: 1px solid #F2F2F2;
+
+    background-color: #ffffff;
+    position: absolute;
+}
+
+/*.navDown div:hover{*/
+    /*background-color: #F2F2F2;*/
+/*}*/
+.navDown div:hover{
+    background-color: #01BC39;
+    color: #ffffff;
+}
+.navDown div>a:hover{
+    color: #ffffff;
+}
+.fr p{
+    position: absolute;
+    right: 2px;
+    top: 18px;
+    background: url("../image/arrow.png") no-repeat  ;
+    transition: transform .2s ease-in 0s;
+    -webkit-transition: -webkit-transform .2sease-in 0s;
+    overflow: hidden;
+    height: 9px;
+    width: 9px;
+    vertical-align: middle;
+}
+
+.hover{
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+    /*background:url(../image/arrow.png) no-repeat -169px -2px;*/
+}
+
+#maskLayer{
+    display:none;
+    position:absolute;
+    width:600px;
+    height:300px;
+    z-index:2001;
+    background-color:#fff
+}
+
+#drag_h{
+    height:50px;
+    line-height:50px;
+    background-color:#fff;
+    border-bottom:2px dotted #808080;
+    padding-left:30px;
+}
+#drag_h b{
+    float:left;
+
+}
+#drag_h span{
+
+    float:right;
+    cursor:pointer;
+    height:20px;
+    width:20px;
+    border-radius:10px;
+    background-color:#808080;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+#drag_con,#city2{
+    padding:10px 4px;
+    padding-left:30px;
+}
+#drag_con{
+    border-bottom: 2px dotted #808080;
+}
+.mask {
+    background-color: #666666;
+    position: absolute;
+    z-index: 800;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+}
+
+.distSelect,.distSelect div,.distSelect ul{
+    padding:10px 4px;
+    padding-left:30px
+}
+.distSelect div{
+    font-size: 14px;
+    font-weight: bold;
+}
+.distSelect li{
+    float: left;
+    padding-right: 20px;
+}
+.selectCity{
+    cursor: pointer;
+}
+
+.header{
+    height: 104px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.header_inner{
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    z-index: 31;
+}
+.header_inner .logo{
+    width: 200px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    float: left;
+    position: relative;
+}
+.header_inner .logo img{
+    width: 200px;
+    height: 66px;
+    vertical-align: middle;
+
+}
+.header_inner .cartName{
+    width: 100px;
+    height: 104px;
+    float: left;
+    line-height: 104px;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+.header_inner .cartLine{
+    width: 420px;
+    height: 104px;
+    line-height: 104px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.header_inner .cartLine div{
+    width: 140px;
+    height: 5px;
+    float: left;
+    background-color: #c9c9c9;
+    position: relative;
+    text-align: center;
+}
+.header_inner .cartLine div span.num{
+    position: absolute;
+    text-align: center;
+    top: -15px;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+
+    border-radius: 15px;
+    color: #ffffff;
+    font-weight: bolder;
+    background-color: #c9c9c9;
+    z-index: 99;
+}
+.header_inner .cartLine  .first{
+    background-color: #01bc38;
+}
+.header_inner .cartLine  .first span.num{
+    background-color:#01bc38;
+}
+.header_inner .cartLine  .first span.title{
+    color: #01bc38;
+}
+.allGoods{
+    width: 1200px;
+    height: 50px;
+    line-height: 70px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-bottom: 2px solid #00A934;
+
+}
+.allGoods .titleName{
+    width: 100px;
+    font-weight: bolder;
+    font-size: 18px;
+    float: left;
+}
+.allGoods .arrive{
+    position: absolute;
+    right: 0;
+}
+.allGoods .arrive select{
+    outline: none;
+}
+.allGoods .arrive .arriveat{
+    font-weight: bold;
+}
+.allGoods .arrive .s{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.navbanner{
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    background-color: #F2F2F2;
+}
+.navbanner .all{
+    display: inline-block;
+    margin-left: 10px;
+    width: 110px;
+    height: 40px;
+
+
+}
+.navbanner .all input{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.navbanner .good{
+    display: inline-block;
+    width: 580px;
+    padding-left: 20px;
+}
+.navbanner .unit{
+    display: inline-block;
+    width: 130px;
+    text-align: right;
+
+}
+.navbanner .count{
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+}
+.navbanner .total{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+.navbanner .option{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+.myGood{
+    width: 1200px;
+    height: 110px;
+    margin: 0 auto;
+    line-height: 110px;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.myGood .myGood_1{
+    width: 120px;
+    height: 110px;
+    float: left;
+}
+.myGood .myGood_1 input{
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+.myGood .myGood_2{
+    width: 600px;
+    height: 110px;
+    float: left;
+}
+.myGood .myGood_2 img{
+    width: 150px;
+    height: 70px;
+    vertical-align: middle;
+}
+.myGood .myGood_2 .description{
+    margin-left: 10px;
+    font-weight:bolder;
+}
+.myGood .myGood_2 .inform{
+    margin-left: 15px;
+    /*background-color: #A1A1A1;*/
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+}
+.myGood .myGood_3{
+    width: 130px;
+    height: 110px;
+    float: left;
+    text-align: right;
+}
+.myGood .myGood_3 .pass{
+    text-decoration: line-through;
+    color: #A1A1A1;
+    margin-right: 15px;
+}
+.myGood .myGood_4{
+    width: 130px;
+    height: 110px;
+    float: left;
+    text-align: center;
+}
+.myGood .myGood_4 label.sub,.add{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.myGood .myGood_4 input{
+    width: 50px;
+    height: 25px;
+    text-align: center;
+}
+.myGood .myGood_5{
+    width: 120px;
+    height: 110px;
+    float: left;
+    text-align: center;
+    color: red;
+    font-size: 16px;
+}
+.myGood_6{
+    width: 100px;
+    height: 110px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.myGood .myGood_6 .c1{
+   line-height: 30px;
+    width: 100%;
+    position: absolute;
+    top:20px;
+    z-index: 99;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.myGood .myGood_6 .c2{
+    line-height: 30px;
+    width: 100%;
+    position: absolute;
+    top:60px;
+    cursor: pointer;
+    text-decoration: underline;
+    z-index: 100;
+}
+.clear{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    line-height: 60px;
+}
+.clear .clearAll{
+    margin-left: 10px;
+    cursor: pointer;
+    color: blue;
+    margin-right: 20px;
+
+}
+.clear .go{
+    margin-left: 10px;
+}
+.clear .totalCount{
+    position: absolute;
+    right:140px;
+    top: 0;
+    float: left;
+}
+.clear .totalCount .p1 .goodNum{
+    font-weight: bold;
+    color: red;
+}
+.clear .totalCount .p1 .jieshen{
+    margin-right: 20px;
+}
+.clear .totalCount .p1 .allPrice,.xiushi{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+.checkOut{
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 5px;
+}
+.checkOut input{
+
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    /*border-radius: 5px;*/
+    font-size: 16px;
+    outline: none;
+    background-color: #FF6D40;
+    color: #ffffff;
+    border: 1px solid #FF6D40;
+}
+/*part of common  top*/
+
+
+
+/*part of common  footer*/
+.footer{
+    width: 100%;
+    line-height: 18px;
+    overflow: hidden;
+    color: #000;
+    margin-top: 20px;
+}
+
+.footer .footer_banner{
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer .footer_banner ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .footer_banner ul li{
+    float: left;
+    /*font-weight: bold;*/
+    font-size: 20px;
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #F0F0F0;
+    color: #555555;
+    opacity: 0.8;
+}
+
+.footer .foot{
+    width: 100%;
+    height: 136px;
+}
+.footer .foot .connectUs{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+.footer .foot .connectUs ul{
+    width:300px ;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.footer .foot .connectUs ul li{
+    float: left;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 20px;
+
+
+
+}
+.footer .foot .connectUs ul li a{
+    color: #333333;
+}
+.footer .foot_img{
+    width: 1200px;
+    height: 56px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+.footer .foot_img img{
+    width: 919px;
+    height: 56px;
+    margin-left: 140px;
+    position: absolute;
+}
+/*part of common  footer*/

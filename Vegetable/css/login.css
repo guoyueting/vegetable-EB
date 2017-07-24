@@ -1,0 +1,293 @@
+html,body,div,h1,h2,h3,h4,ul,p,img{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+.header{
+    width:1000px;
+    height: 104px;
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+
+}
+.logo{
+    height: 104px;
+    float: left;
+    display: flex;
+    align-items: center;
+
+}
+.logo img
+{
+    width: 200px;
+    height: 66px;
+    
+    vertical-align: middle;
+}
+
+
+.nav{
+    float: left;
+    margin-left: 35px;
+    line-height: 104px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+}
+.main{
+    height: 400px;
+    position: relative;
+    border-top: 2px solid #00A933;
+    min-width: 1000px;
+    background: url("../image/login.png");
+}
+.main .login_inner{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.main .login{
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    background-color: #ffffff;
+    top:20px;
+    right: 0;
+    text-align: left;
+
+}
+.login .title{
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 80px;
+    margin-left: 40px;
+}
+.login .login_form{
+
+    margin-left: 40px;
+    width: 320px;
+    position: relative;
+
+}
+.login_form input{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.login .login_form input{
+    height: 32px;
+    width: 275px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.user{
+    width: 279px;
+    height: 60px;
+    position: relative;
+}
+.user img{
+    position: absolute;
+    /*border-top: 1px solid #A1A1A1;*/
+    /*border-left: 1px solid #A1A1A1;*/
+    /*border-bottom: 1px solid #A1A1A1;*/
+    border: 1px solid #A1A1A1;
+    top: 10px;
+    height: 32px;
+    width: 34px;
+}
+.login .login_form .user #telNum{
+    width: 240px;
+    margin-left: 35px;
+    border: 1px solid #A1A1A1;
+}
+
+.login .login_form .pwd{
+    width: 279px;
+    height: 60px;
+    position: relative;
+}
+
+.pwd img{
+    position: absolute;
+    /*border-top: 1px solid #A1A1A1;*/
+    /*border-left: 1px solid #A1A1A1;*/
+    /*border-bottom: 1px solid #A1A1A1;*/
+    border:1px solid #A1A1A1;
+    top: 10px;
+    height: 32px;
+    width: 34px;
+}
+.login .login_form .pwd #psw{
+    width: 240px;
+    margin-left: 35px;
+    border: 1px solid #A1A1A1;
+}
+.login .login_form .validateCode{
+    height: 50px;
+    width: 320px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.login .login_form .validateCode input{
+    width: 100px;
+    border: 1px solid #A1A1A1;
+}
+.login .login_form .validateCode img{
+    width: 80px;
+    height: 34px;
+    margin-left: 5px;
+    vertical-align: middle;
+    background-color: #e5e5e5;
+
+}
+.login .login_form .validateCode span{
+    margin-left: 5px;
+    font-size: 12px;
+
+}
+.change a{
+    color: #666666;
+    /*opacity: 0.6;*/
+}
+.login .login_form .check{
+    margin-top: 20px;
+    height: 20px;
+
+
+}
+.login .login_form .check input{
+    height: 14px;
+    width: 14px;
+}
+.check span{
+    color: #666666;
+}
+.check span a{
+    color: #666666;
+}
+.login_form .check .forget{
+    float: right;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+.login .login_form .sure
+{
+    margin-top: 15px;
+    height: 60px;
+    width: 320px;
+}
+.login .login_form .sure input{
+    width: 137px;
+    cursor: pointer;
+    height: 40px;
+    font-size: 18px;
+
+
+}
+.login_form .sure .logins{
+    background-color: #76AB25;
+    color: #ffffff;
+    border:1px solid #76AB25;
+}
+
+.login_form .sure .register{
+    background-color: #E9E9E9;
+    border:1px solid #BDBDBD;
+}
+
+
+/*part of common  footer*/
+.footer{
+    width: 100%;
+    line-height: 18px;
+    overflow: hidden;
+    color: #000;
+    margin-top: 20px;
+}
+
+.footer .footer_banner{
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.footer .footer_banner ul{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .footer_banner ul li{
+    float: left;
+    /*font-weight: bold;*/
+    font-size: 20px;
+    height: 80px;
+    width: 300px;
+    text-align: center;
+    line-height: 80px;
+    background-color: #F0F0F0;
+    color: #555555;
+    opacity: 0.8;
+}
+
+.footer .foot{
+    width: 100%;
+    height: 136px;
+}
+.footer .foot .connectUs{
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
+.footer .foot .connectUs ul{
+    width:300px ;
+    margin: 0 auto;
+    line-height: 50px;
+}
+
+.footer .foot .connectUs ul li{
+    float: left;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 20px;
+
+
+
+}
+.footer .foot .connectUs ul li a{
+    color: #333333;
+}
+.footer .foot_img{
+    width: 1200px;
+    height: 56px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+.footer .foot_img img{
+    width: 919px;
+    height: 56px;
+    margin-left: 140px;
+    position: absolute;
+}

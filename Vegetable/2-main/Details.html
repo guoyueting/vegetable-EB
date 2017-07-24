@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/details.css" rel="stylesheet" type="text/css">
+    <link href="../css/bottomTag.css" rel="stylesheet" type="text/css">
+    <link href="../css/magiczoomplus.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../js/mzp-packed.js"></script>
+</head>
+<body>
+<!--the top of page-->
+<div class="top">
+    <div class="top_nav">
+        <ul class="fl">
+            <li> 欢迎光临第二菜场！</li>
+            <li class="login"> <a href="#">登录</a></li>
+            <li class="register"><a href="#">注册</a></li>
+            <li class="cityDiv">配送至：<strong class="selectCity">南昌&nbsp;青山湖区</strong></li>
+        </ul>
+        <ul class="fr">
+            <li class="account_menu"><a href="#">我的账号</a><p class="mycount"></p>
+                <div class="navDown">
+                    <div><a href="#">个人资料</a> </div>
+                    <div><a href="#">我的订单</a> </div>
+                    <div><a href="#">账户资产</a> </div>
+                    <div><a href="#">好友推荐</a> </div>
+                    <div><a href="#">会员积分</a> </div>
+                    <div><a href="#">我的收藏</a> </div>
+                    <div><a href="#">我的留言</a> </div>
+                    <div><a href="#">售后服务</a> </div>
+                </div>
+
+            </li>
+            <!--<li><a href="#">充值提货</a></li>-->
+            <li><a href="#">手机App</a></li>
+            <li><a href="#">帮助</a> </li>
+            <li><a href="#">关注</a><p class="attentiondown"></p>
+                <div class="attention">
+                    <ul>
+                        <li><img class="attentionimg" src="" alt="二维码1"></li>
+                        <li><img class="attentionimg" src="" alt="二维码2"></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--the top of page-->
+<div class="header">
+    <div class="header_inner">
+        <div class="logo">
+            <img src="../image/LOGO.png" alt="logo">
+        </div>
+        <div class="index_promo"></div>
+        <div class="search">
+            <form action="">
+                <input type="text" class="text" placeholder="关键词">
+                <input type="submit" class="submit" value="搜索">
+            </form>
+
+            <div class="search_hot">
+                热门：<a href="#">樱桃</a>
+                <a href="#">皇帝菜</a>
+                <a href="#">海鲜</a>
+                <a href="#">西红柿</a>
+                <a href="#">食用油</a>
+            </div>
+        </div>
+        <div class="shopingcar">
+            <img class="cart" src="../image/cart.png">
+            <a href="#">我的购物车</a>
+            <b class="carnum">0</b>
+            <div class="shop_car" id="shopCar">
+                <div class="float_car">
+                    <div class="nopro">
+                        <p>购物车暂无商品</p>
+                        <p>
+                            <span>
+                                如您已添加商品，请<a href="#">登录</a>查看
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="mainNav">
+    <div class="navmenu">
+        <div class="categories">
+            <div class="dt">
+                <a href="#" class="topall">全部商品分类</a>
+            </div>
+
+        </div>
+        <div class="menu1">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">折扣区</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li><a href="#">积分商城</a><p></p></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="crumbs">
+    <span><a href="#">首页</a></span>
+    <span>></span>
+    <span><a href="#">新鲜蔬菜</a></span>
+    <span>></span>
+    <span><a href="#">根茎类</a> </span>
+    <span>></span>
+    <span>【有机食品】最新有机蔬菜 </span>
+
+</div>
+
+<div class="wrap">
+    <div class="productDetail">
+        <span class="left" id="pre">◀</span>
+        <span class="rights" id="next"> ▶ </span>
+        <div class="detailTop" id="picBox">
+            <a href="../js/image/img01.jpg"  id="zoom1" class="MagicZoom MagicThumb">
+                <img  src="../js/image/img01.jpg" id="main_img" class="main_img" >
+            </a>
+        </div>
+        <div class="detailBottom " id="listBox">
+            <ul>
+                <a class="item on"  href="../js/image/img01.jpg" rel="zoom1" rev="../js/image/img01.jpg"><img src="../js/image/img01s.jpg"alt="图片1"></a>
+                <a class="item" href="../js/image/img02.jpg" rel="zoom1" rev="../js/image/img02.jpg"><img src="../js/image/img02s.jpg"alt="图片2"></a>
+                <a class="item" href="../js/image/img03.jpg" rel="zoom1" rev="../js/image/img03.jpg"><img src="../js/image/img03s.jpg"alt="图片3"></a>
+                <a class="item" href="../js/image/img02.jpg" rel="zoom1" rev="../js/image/img02.jpg"><img src="../js/image/img02s.jpg"alt="图片2"></a>
+                <a class="item" href="../js/image/img03.jpg" rel="zoom1" rev="../js/image/img03.jpg"><img src="../js/image/img03s.jpg"alt="图片3"></a>
+            </ul>
+        </div>
+    </div>
+    <div class="productMid">
+        <div class="productInner">
+            <p class="p1">
+                <strong>【有机食品】最新有机蔬菜  500g/袋
+                    <br>
+                    青山湖区种植
+                </strong>
+            </p>
+            <p class="p3">
+                <span >优惠价：</span><span class="s">￥2.5</span>
+            </p>
+            <p class="p2">
+                <span>原价：￥3.5</span>
+            </p>
+
+            <p class="p4">
+                <span>运费：10元</span>
+            </p>
+            <p class="p5">
+                <span>重量：1.0kg</span>
+            </p>
+            <p class="xiangke"><span>相克单品：兔肉、牛肉、黄枣</span></p>
+            <p class="p6">
+                <span>月销量：</span><span class="s1">8262</span>
+                <span>累计评价：</span><span class="s2">8</span>
+                <span>送积分：</span><span class="s3">14</span>
+            </p>
+
+
+        </div>
+        <div class="productBottom">
+            <p class="add">
+                <span>数量：</span><input type="text" value="1" id="count"><input type="button" value="+" id="add"><input type="button" value="-" id="sub">
+                <span class="kucun">库存1200袋</span><span class="less">库存不够，商品暂时缺货。</span>
+            </p>
+            <p class="button">
+                <input type="button"  value="加入购物车">
+            </p>
+            <p class="share">
+                <span>分享：</span>
+                <span class="img"><a href="#"> <img src=""></a></span>
+                <span class="img"><a href="#"> <img src=""></a></span>
+                <span class="img"><a href="#"> <img src=""></a></span>
+                <span class="img"><a href="#"> <img src=""></a></span>
+                <span class="shoucan">收藏商品（18人）</span>
+            </p>
+        </div>
+    </div>
+    <div class="Ulike">
+        <div class="like">
+            <p><span>猜你喜欢</span><span class="changes"><a href="#">换一批</a></span></p>
+        </div>
+        <div class="ulike_img1">
+            <img src="" alt="图片">
+            <div>
+                <span>新鲜有机蔬菜 450g</span><span style="float: right" class="pric">￥3.60</span>
+            </div>
+
+        </div>
+        <div class="ulike_img2">
+            <img src="" alt="图片">
+            <div>
+                <span>新鲜有机蔬菜 450g</span><span style="float: right" class="pric">￥3.60</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="zuhe">
+    <div class="addzuhe">
+        <div class="sp1">
+            套餐搭配
+        </div>
+        <div class="sp2">
+
+            <div class="sp2_img">
+                <img src="" alt="图片">
+                <div>
+                    <p class="p1">
+                        <input type="checkbox">有机无农药大白菜 /500g
+                    </p>
+                    <p class="p2">
+                        <span class="span2">￥2.30</span>&nbsp;&nbsp;<span class="span1">￥2.50</span>
+                    </p>
+                </div>
+            </div>
+            <div class="zu"><span>+</span></div>
+            <div class="sp2_img">
+                <img src="" alt="图片">
+                <div>
+                    <p class="p1">
+                        <input type="checkbox">有机无农药大白菜 /500g
+                    </p>
+                    <p class="p2">
+                        <span class="span2">￥2.30</span>&nbsp;&nbsp;<span class="span1">￥2.50</span>
+                    </p>
+                </div>
+            </div>
+            <div class="zu"><span>+</span></div>
+            <div class="sp2_img">
+                <img src="" alt="图片">
+                <div>
+                    <p class="p1">
+                        <input type="checkbox">有机无农药大白菜 /500g
+                    </p>
+                    <p class="p2">
+                        <span class="span2">￥2.30</span>&nbsp;&nbsp;<span class="span1">￥2.50</span>
+                    </p>
+                </div>
+            </div>
+            <div class="zu"><span>+</span></div>
+            <div class="sp2_img">
+                <img src="" alt="图片">
+                <div>
+                    <p class="p1">
+                        <input type="checkbox">有机无农药大白菜 /500g
+                    </p>
+                    <p class="p2">
+                        <span class="span2">￥2.30</span>&nbsp;&nbsp;<span class="span1">￥2.50</span>
+                    </p>
+                </div>
+            </div>
+            <div class="zu"><span>=</span></div>
+        </div>
+    </div>
+    <div  class="addcat">
+        <div>
+            <p>
+                搭配<span id="ge">0</span>个商品
+            </p>
+            <p class="p2">
+                <span>套餐价：</span><span class="price">￥100.5  0</span>
+            </p>
+            <p class="p3">
+                <input type="button" value="加入购物车">
+            </p>
+        </div>
+    </div>
+
+</div>
+<div class="other">
+    <div class="other1">
+        <div class="like">
+            <p><span>看看别的</span><span class="changes"> <a href="#">换一批</a> </span> </p>
+        </div>
+        <div class="ulike_img1">
+            <img src="" alt="图片">
+            <div>
+                <span>新鲜有机蔬菜 450g</span><span style="float: right" class="pric">￥3.60</span>
+            </div>
+
+        </div>
+        <div class="ulike_img2">
+            <img src="" alt="图片">
+            <div>
+                <span>新鲜有机蔬菜 450g</span><span style="float: right" class="pric">￥3.60</span>
+            </div>
+        </div>
+        <div class="ulike_img2">
+            <img src="" alt="图片">
+            <div>
+                <span>新鲜有机蔬菜 450g</span><span style="float: right" class="pric">￥3.60</span>
+            </div>
+        </div>
+        <div class="ulike_img2">
+            <img src="" alt="图片">
+            <div>
+                <span>新鲜有机蔬菜 450g</span><span style="float: right" class="pric">￥3.60</span>
+            </div>
+        </div>
+        <div class="ulike_img2">
+            <img src="" alt="图片">
+            <div>
+                <span>新鲜有机蔬菜 450g</span><span style="float: right" class="pric">￥3.60</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="other2">
+        <div class="nav">
+            <div class="nav1 select"><span>商品描述</span></div>
+            <a href="#comments"><div class="nav2 "><span>商品评价</span><span>(18)</span></div></a>
+        </div>
+        <div class="description">
+            <p class="description1"><span>品牌：其它</span><span class="sp">规格：约400g/份</span></p>
+            <p class="description2"><span>产地：北京市</span><span class="sp">建议储藏方法：冷藏存储</span></p>
+            <p class="description3"><span>当前存储温度：0-4度</span><span></span></p>
+        </div>
+        <div class="banner">
+            <img src="" alt="banner">
+        </div>
+
+        <div class="comment">
+            <div class="left">
+                <div class="usercomment">用户评价</div>
+                <div class="percent">93%</div>
+                <div class="progress">
+                    <p><span>好评</span>&nbsp;&nbsp;<span class="last">(93%)</span><progress value="93" max="100"></progress></p>
+                    <p><span>好评</span>&nbsp;&nbsp;<span class="last">(13%)</span><progress value="13" max="100"></progress></p>
+                    <p><span>好评</span>&nbsp;&nbsp;<span class="last">(43%)</span><progress value="43" max="100"></progress></p>
+                </div>
+                <div></div>
+            </div>
+            <div class="right">
+                <div class="discr">购买过此商品，评论还可以换积分</div>
+                <div class="commentBtn"><input type="button" id="btnComment" value="发表评论"></div>
+            </div>
+        </div>
+        <div class="commentInfo" id="comments">
+            <div class="comment_nav">
+                <div class="select1" id="alls">全部评论（8）</div>
+                <div id="goods">好评（8）</div>
+                <div id="middles">中评（0）</div>
+                <div id="bads">差评（0）</div>
+                <div id="pics">有图片（0）</div>
+            </div>
+            <div id="operation">
+                <div class="comments" id="all">
+                    <div>
+                        <p class="c1"><span class="cominfo">不错，这个季节吃刚刚好，比较新鲜</span><span class="xing"><img src="../image/xing.png"></span></p>
+                        <p class="c2">
+                            <span class="time">2016-05-07 10:27:00</span>
+                            <span class="author">来自匿名评论</span>
+                            <span class="useful"><span>有用</span><span>没有</span></span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="c1"><span class="cominfo">不错，这个季节吃刚刚好，比较新鲜</span><span class="xing"><img src="../image/xing.png"></span></p>
+                        <p class="c2">
+                            <span class="time">2016-05-07 10:27:00</span>
+                            <span class="author">来自匿名评论</span>
+                            <span class="useful"><span>有用</span><span>没有</span></span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="c1"><span class="cominfo">不错，这个季节吃刚刚好，比较新鲜</span><span class="xing"><img src="../image/xing.png"></span></p>
+                        <p class="c2">
+                            <span class="time">2016-05-07 10:27:00</span>
+                            <span class="author">来自匿名评论</span>
+                            <span class="useful"><span>有用</span><span>没有</span></span>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="c1"><span class="cominfo">不错，这个季节吃刚刚好，比较新鲜</span><span class="xing"><img src="../image/xing.png"></span></p>
+                        <p class="c2">
+                            <span class="time">2016-05-07 10:27:00</span>
+                            <span class="author">来自匿名评论</span>
+                            <span class="useful"><span>有用</span><span>没有</span></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="comments" id="good"></div>
+                <div class="comments" id="middle"></div>
+                <div class="comments" id="bad"></div>
+                <div class="comments" id="pic"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!--the footer of page-->
+<div class="footer">
+    <div class="footer_banner">
+        <ul>
+            <li>100%原产地</li>
+            <li>绿色安全</li>
+            <li>无理由退货</li>
+            <li>24X7配送</li>
+        </ul>
+    </div>
+
+    <div class="foot">
+        <div class="connectUs">
+            <ul>
+                <li><a href="#">关于我们</a> </li>
+                <li><a href="#">支付方式</a> </li>
+                <li><a href="#">联系我们</a> </li>
+            </ul>
+        </div>
+
+        <div class="bottomTag">
+            <div class="bottomContent">
+                <a href="#">沪ICP备13044278号</a>
+                <span>|</span>
+                <a href="#">合字B1.B2-2013004</a>
+                <span>|</span>
+                <a href="#">营业执照</a>
+                <span>|</span>
+                <a href="#">互联网药品信息服务资格证</a>
+                <span>|</span>
+                <a href="#">互联网药品交易服务资格证</a>
+            </div>
+        </div>
+        <div class="authority">
+            <span>Copyright©2016我的菜场，All Rights Reserved</span>
+        </div>
+    </div>
+</div>
+<!--the footer of page-->
+
+<!--district select-->
+<div class="mask"></div>
+<div id="maskLayer">
+    <div id="drag">
+        <h3 id="drag_h">
+            <b>地区选择</b><span id="close">X</span>
+        </h3>
+        <div id="drag_con">
+            <div id="city2">
+                省份：<select class="prov"></select>
+                &nbsp; 市区选择：<select class="city"></select>
+                <select class="dist"></select>
+                <button id="btn" style="position: absolute;right: 10px;cursor: pointer;">确定</button>
+            </div>
+        </div>
+        <div class="distSelect">
+            <div>区域选择:</div>
+            <ul>
+                <li>林芝地铁站</li>
+                <li>海兵广场</li>
+                <li>缤纷商城圈</li>
+                <li>宝安体育中心</li>
+                <li>翻身创业天虹</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="addComments">
+    <div id="titleh">
+        <b>发表评论</b><span id ="closed">X</span>
+    </div>
+    <div id="comBody">
+        <form action="">
+            <label>内容：</label><br>
+            <textarea cols="70" rows="10"></textarea><br>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+</div>
+<!--end of district select-->
+<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="../js/jquery.cityselect.js"></script>
+<script type="text/javascript" src="../js/zzsc.js"></script>
+
+<script type="text/javascript">
+    var currentIndex = -1;	//当前图片索引
+    var $big = $('.big_img li');
+    var $small = $('.slider_list li');	//小图索引
+    $(function(){
+        start();
+
+
+        //购物车显示效果
+        $(".shopingcar").mouseover(function(){
+            var obj=$("#shopCar");
+            $(obj).css("display","block");
+            $(obj).css("left",this.clientX);
+            $(obj).css("top",this.clientY+10);
+        }).mouseout(function(){
+            $("#shopCar").css("display","none");
+        });
+
+        //下拉框
+        $(".navDown").parent().hover(function(){
+            $(".mycount").addClass("hover");
+
+            $(this).find(".navDown").slideDown("normal");
+        },function(){
+            $(".mycount").removeClass("hover");
+            $(this).find(".navDown").stop().slideUp("normal");
+        });
+
+        //关注_下拉框
+        $(".attention").parent().hover(function(){
+            $(".attentiondown").addClass("hover");
+
+            $(this).find(".attention").slideDown("normal");
+        },function(){
+            $(".attentiondown").removeClass("hover");
+            $(this).find(".attention").stop().slideUp("normal");
+        });
+
+        $(".item").hover(function(){
+            $(this).find(".boxShow").show();
+        },function(){
+            $(this).find(".boxShow").hide();
+        })
+        //地区选择
+        $(".cityDiv").click(function () {
+
+            $("#maskLayer").css("left", ($(window).width() - $("#maskLayer").outerWidth()) / 2);
+            $("#maskLayer").css("top", "120px");
+            $(".mask").css({
+                "display": "block",
+                "height": $(document).height()
+            });
+            $("#maskLayer").css("display", "block");
+            $("#city2").citySelect({
+
+                //required: false
+                prov: "江西",
+                city: "南昌",
+                dist: "青山湖区",
+                nodata: "none"
+            });
+
+        });
+        $("#btn").click(function () {
+            if( $(".dist").val()!=null)
+                $(".selectCity").html($(".city").val() + " " + $(".dist").val());
+            else
+                $(".selectCity").html($(".prov").val() + " " + $(".city").val());
+            $("#maskLayer").css("display", "none");
+            $(".mask").css({
+                "display": "none"
+
+            });
+            //alert($(".city").val()+" "+$(".dist").val());
+        })
+        $("#close").click(function () {
+            $("#maskLayer").css("display", "none");
+            $(".mask").css({
+                "display": "none"
+
+            });
+        });
+
+        //添加评论
+        $("#btnComment").click(function(){
+            var top=$(document).scrollTop();
+            var left=$(document).scrollLeft();
+            var height=$(window).height();
+            var width=$(window).width();
+            console.log("height="+height+"width="+width);
+            $("#addComments").css("left", ($(window).width() - $("#addComments").outerWidth()) / 2);
+            $("#addComments").css("top", (top+ (height - $("#addComments").outerHeight()) / 2));
+            $(".mask").css({
+                "display": "block",
+                "height": $(document).height()
+            });
+            $("#addComments").css("display","block");
+        });
+
+        $("#closed").click(function () {
+            $("#addComments").css("display", "none");
+            $(".mask").css({
+                "display": "none"
+
+            });
+        });
+
+        $(document).scroll(function(){
+            var top=$(document).scrollTop();
+            var left=$(document).scrollLeft();
+            var height=$(window).height();
+            var width=$(window).width();
+
+
+            $("#addComments").css("top", (top+ (height - $("#addComments").outerHeight()) / 2));
+
+        })
+
+
+        $("#add").click(function(){
+            var value=$("#count").val();
+            var num=parseInt(value);
+            num++;
+            $("#count").val(num);
+
+
+        });
+        $("#sub").click(function(){
+            var value=$("#count").val();
+            var num=parseInt(value);
+            if(num!=0)
+            {
+                num--;
+            }
+
+            $("#count").val(num);
+
+
+        });
+        $("input[type='checkbox']").click(function(){
+            if(this.checked)
+            {
+                var price=$(this).parent("p").next().find(".span2")[0].innerText;
+                var str=price.split('￥');
+                var cPrincee=parseFloat(str[1]);
+                var p=$(".price").html();
+                var str1= p.split('￥');
+                var total=parseFloat(str1[1]);
+
+                total= (total+cPrincee).toFixed(2);
+                $(".price").html("￥"+total);
+                var ge=$("#ge").html();
+                var num=parseInt(ge);
+                num++;
+                $("#ge").html(num);
+
+
+
+            }
+            else
+            {
+                var pr=$(this).parent("p").next().find(".span2")[0].innerText;
+                var st=pr.split('￥');
+                var cPrince=parseFloat(st[1]);
+                var pp=$(".price").html();
+                var st1= pp.split('￥');
+                var tota=parseFloat(st1[1]);
+                if(tota<cPrince)
+                {
+                    tota=0;
+                }
+                else
+                {
+                    tota=tota-cPrince;
+                }
+                $(".price").html("￥"+tota.toString());
+                var g=$("#ge").html();
+                var nu=parseInt(g);
+                if(nu!=0)
+                    nu--;
+                $("#ge").html(nu);
+
+            }
+        });
+
+        $(".nav>div").click(function(){
+            $(".nav>a>div").removeClass("select");
+            $(this).addClass("select");
+        });
+        $(".nav>a").click(function(){
+            $(".nav>div").removeClass("select");
+            $(this).find("div").addClass("select");
+        });
+        $(".comment_nav>div").click(function(){
+            $(".comment_nav>div").removeClass("select1");
+            $(this).addClass("select1");
+            var id=$(this).attr("id");
+            var index=id.indexOf('s');
+            var sub=id.substring(0,index);
+            var newId="#"+sub;
+            $("div#operation>div").css("display","none");
+            $(newId).css("display","block");
+            console.log(id+" "+index+" "+sub);
+        });
+    });
+
+
+    function start(){
+        function G(s){
+            return document.getElementById(s);
+        }
+
+        function getStyle(obj, attr){
+            if(obj.currentStyle){
+                return obj.currentStyle[attr];
+            }else{
+                return getComputedStyle(obj, false)[attr];
+            }
+        }
+
+        function Animate(obj, json){
+            if(obj.timer){
+                clearInterval(obj.timer);
+            }
+            obj.timer = setInterval(function(){
+                for(var attr in json){
+                    var iCur = parseInt(getStyle(obj, attr));
+                    iCur = iCur ? iCur : 0;
+                    var iSpeed = (json[attr] - iCur) / 5;
+                    iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+                    obj.style[attr] = iCur + iSpeed + 'px';
+                    if(iCur == json[attr]){
+                        clearInterval(obj.timer);
+                    }
+                }
+            }, 30);
+        }
+
+        var oPic = G("picBox");
+        var oList = G("listBox");
+
+        var oPrev = G("prev");
+        var oNext = G("next");
+
+
+        var oPicLi = oPic.getElementsByTagName("a");
+        var oListLi = oList.getElementsByTagName("a");
+        //var len1 = oPicLi.length;
+        var len2 = oListLi.length;
+
+        var oPicUl = oPic.getElementsByTagName("img")[0];
+        var oListUl = oList.getElementsByTagName("ul")[0];
+        var w1 = oPicLi[0].offsetWidth;
+        var w2 = oListLi[0].offsetWidth;
+
+        oPicUl.style.width = w1  + "px";
+
+
+        var index = 0;
+
+        var num = 5;
+        var num2 = Math.ceil(num / 2);
+
+        function Change(){
+
+            //Animate(oPicUl, {left: - index * w1});
+//            oPicLi[0].href=oListLi[index].href;
+//            oPicUl.src=oListLi[index].rev;
+            oListLi[index].click();
+
+            if(index < num2){
+                Animate(oListUl, {left: 0});
+            }else if(index + num2 <= len2){
+                Animate(oListUl, {left: - ((index - num2 + 1) * w2+8)});
+            }else{
+                Animate(oListUl, {left: - ((len2 - num) * w2+8)});
+            }
+
+            for (var i = 0; i < len2; i++) {
+                oListLi[i].className = "";
+                if(i == index){
+                    oListLi[i].className = "on";
+                }
+            }
+
+            totalindex = index;
+        }
+
+
+
+        var interval1;
+        $("#next").mouseover(function(){
+            interval=setInterval(function(){
+                index ++;
+                index = index == len2 ? 0 : index;
+
+                Change();
+            },1000);
+        }).mouseout(function(){
+            clearInterval(interval)
+        })
+//        $("#next").click(function(){
+//
+//            index ++;
+//            index = index == len2 ? 0 : index;
+//            Change();
+//        });
+//        $("#pre").click(function(){
+//
+//            index --;
+//            index = index == -1 ? len2 -1 : index;
+//            Change();
+//        });
+        var interval2;
+        $("#pre").mouseover(function(){
+            interval2=setInterval(function(){
+                index --;
+                index = index == -1 ? len2 -1 : index;
+                Change();
+
+            },1000);
+        }).mouseout(function(){
+            clearInterval(interval2);
+        });
+
+
+
+        for (var i = 0; i < len2; i++) {
+            oListLi[i].index = i;
+            oListLi[i].onmouseover = function(){
+                index = this.index;
+                Change();
+            }
+        }
+
+    }
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.bottomTag {
+    color: #666;
+    font-size: 16px;
+    font-family:"微软雅黑";
+}
+
+.bottomContent {
+    margin:auto;
+    width: 640px;
+}
+
+.bottomTag a {
+    color: #666;
+    font-size: 12px;
+}
+.authority {
+    color:#666;
+    font-size:12px;
+    font-family:"微软雅黑";
+}
+.authority span {
+    display: block;
+    width:330px;
+    margin:10px auto;
+}

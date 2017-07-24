@@ -1,0 +1,311 @@
+/*part of common*/
+.center .right{
+    height:660px;
+    width: 980px;
+    margin-left: 20px;
+    float: right;
+
+}
+.center .right .remainingsum{
+    width: 978px;
+    height: 98px;
+    border: 1px solid #A1A1A1;
+}
+.center .right .remainingsum .p1{
+    width: 100%;
+    height: 60px;
+    line-height: 80px;
+}
+.center .right .remainingsum .p1 .s1{
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.center .right .remainingsum .p1 .s2{
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+}
+.center .right .remainingsum .p2{
+    padding-left: 20px;
+}
+.center .right .operation{
+    margin-top: 28px;
+    width: 978px;
+    height: 530px;
+    border: 1px solid #A1A1A1;
+}
+
+.center .right .operation .innerNav{
+    width: 100%;
+    height: 39px;
+    border-bottom: 1px solid #c9c9c9;
+    line-height: 39px;
+    background-color: #F2F2F2;
+
+}
+.center .right .operation .innerNav div{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    /*border-right: 1px solid #c9c9c9;*/
+    font-weight: bold;
+    cursor: pointer;
+}
+.center .right .operation .innerNav .select{
+    color: #00A934;
+    background-color: #ffffff;
+    border-top: 2px solid #00A934;
+}
+.center .right .operation .content{
+    width: 100%;
+    height: 490px;
+}
+.center .right .operation .content1{
+    width: 100%;
+    height: 490px;
+    display: none;
+}
+.center .right .operation .content2{
+    width: 100%;
+    height: 490px;
+    display: none;
+}
+.center .right .operation .content .pay_1{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.center .right .operation .content .pay_1 p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight:bold;
+}
+
+.center .right .operation .content  .pay_1 div img{
+    width: 150px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.center .right .operation .content .pay_2{
+    width: 100%;
+    height: 360px;
+    margin-left: 20px;
+
+}
+
+.center .right .operation .content .pay_2 p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight:bold;
+}
+
+.center .right .operation .content .pay_2 div{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+.center .right .operation .content .pay_2 div img{
+    width: 150px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.center .right .operation .content .pay_2 .chongzhi{
+    height: 150px;
+    width: 978px;
+    position: relative;
+}
+.center .right .operation .content .pay_2 .chongzhi .p3{
+    width: 978px;
+    height: 40px;
+}
+.center .right .operation .content .pay_2 .chongzhi .p3 input{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 25px;
+    outline: none;
+}
+
+.center .right .operation .content .pay_2 .chongzhi .p4{
+    display: block;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 1px;
+    top:100px
+}
+.center .right .operation .content .pay_2 .chongzhi .p4 input{
+    margin:0;
+    padding:0;
+    width: 120px;
+    height: 40px;
+    outline: none;
+    font-size: 14px;
+    background-color: #FF6D40;
+    color: #ffffff;
+    border: 1px solid #FF6D40;
+    cursor: pointer;
+}
+
+.center .right .operation .content1 .tixian{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+.center .right .operation .content1 .tixian .t1{
+
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.center .right .operation .content1 .tixian .t2{
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+.center .right .operation .content1 .select_bank{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.center .right .operation .content1 .select_bank .t3{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.center .right .operation .content1 .select_bank div{
+    display: inline-block;
+
+}
+.center .right .operation .content1 .select_bank div span:last-child{
+    margin-left: 40px;
+}
+.center .right .operation .content1 form{
+    margin-left: 20px;
+}
+.center .right .operation .content1 form div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+.center .right .operation .content1 form div input[type="text"]{
+    margin: 0;
+    padding:0;
+    outline: none;
+    height: 25px;
+    width: 200px;
+}
+.center .right .operation .content1 form div select{
+    height: 29px;
+    width: 204px;
+    outline: none;
+}
+.center .right .operation .content1 form .arriveTime input:last-child{
+    margin-left: 35px;
+}
+.center .right .operation .content1 form div input[type="submit"]
+{
+    margin:0;
+    padding: 0;
+    outline: none;
+    height: 40px;
+    width: 120px;
+    background-color:#FF6D40 ;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #FF6D40 ;
+}
+.center .right .operation .content2 .bank{
+    width: 878px;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid #A1A1A1;
+    position: relative;
+
+}
+.center .right .operation .content2 .bank span{
+    position: absolute;
+    bottom: 4px;
+}
+.center .right .operation .content2 .bank span:first-child{
+    font-weight: bold;
+}
+.center .right .operation .content2 .bank span:last-child{
+    right: 0;
+
+}
+.center .right .operation .content2 .bank span:last-child a{
+    text-decoration: underline;
+    margin-right: 15px;
+}
+.center .right .operation .content2 .bankInfo{
+    width: 878px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.center .right .operation .content2 .bankInfo p{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+}
+.center .right .operation .content2  .bindBank{
+    width: 878px;
+    margin:0 auto;
+    margin-top: 20px;
+    height: 40px;
+    border-bottom: 1px solid #A1A1A1;
+    position: relative;
+}
+.center .right .operation .content2  .bindBank span{
+    position: absolute;
+    bottom: 4px;
+}
+.center .right .operation .content2  .bindBank span:first-child{
+    font-weight: bold;
+}
+.center .right .operation .content2  .bindBank span:last-child{
+    right: 0;
+}
+
+.center .right .operation .content2 .bind{
+    width: 878px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.center .right .operation .content2 .bind div{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+.center .right .operation .content2 .bind div input[type="text"]
+{
+    margin:0;
+    padding: 0;
+    outline: none;
+    height: 25px;
+    width: 200px;
+}
+.center .right .operation .content2 .bind .check{
+    margin-top: 15px;
+
+}
+.center .right .operation .content2 .bind .check input{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+    color:#ffffff;
+    background-color: #FF6D40;
+    cursor: pointer;
+    border: 1px solid #FF6D40;
+}

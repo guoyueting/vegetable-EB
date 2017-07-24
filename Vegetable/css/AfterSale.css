@@ -1,0 +1,80 @@
+.center .right{
+    width: 970px;
+    margin-left: 20px;
+    float: right;
+    min-height: 600px;
+}
+
+.aboveBar {
+    width: 970px;
+    margin-left: 20px;
+    float: right;
+    height: 100px;
+    border: 1px solid #e5e5e5;
+}
+
+.belowBar {
+    margin-top:10px;
+    width: 970px;
+    margin-left: 20px;
+    float: right;
+    height: 700px;
+    border: 1px solid #e5e5e5;
+}
+
+.first {
+    display: block;
+    float:left;
+    margin-top: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.second {
+    display: block;
+    float:left;
+    margin-top: 20px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.third {
+    display: block;
+    margin-top: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+
+.addition {
+    margin-top:40px;
+    margin-left:35px;
+    color: #666666;
+}
+
+.topspan {
+    display:block;
+    margin-top:20px;
+    margin-left:35px;
+    margin-right:30px;
+}
+
+table {
+    border-collapse: collapse;
+    width:900px;
+    margin-left: 35px;
+    color:#666666;
+}
+
+table, td, th {
+    border: 1px solid #d9dadb;
+}
+
+table th {
+    background-color: #e5e5e5;
+}
+
+.addition span {
+    display:block;
+    margin-right: 30px;
+}

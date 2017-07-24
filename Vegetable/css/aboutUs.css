@@ -1,0 +1,15 @@
+.center .left .nav{
+    margin-left: 0;
+}
+.center .left .nav a{
+    font-weight: normal;
+    margin-left: 60px;
+
+}
+.center .left  .select{
+    background-color: #00A934;
+    color: white;
+}
+.center .left  .select a{
+    color: white;
+}

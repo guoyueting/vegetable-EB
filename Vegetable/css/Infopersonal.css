@@ -1,0 +1,403 @@
+.InfoRight{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d1d1d1;
+    min-height: 100px;
+    width: 980px;
+    float: right;
+}
+
+
+.userInfo{
+    width: 982px;
+    height: 100px;
+    background-color: #00A933;
+
+}
+
+.userInfo div{
+    display: inline-block;
+    float: left;
+}
+.userInfo .photo{
+    width: 100px;
+    height: 118px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+ .userInfo .photo img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid #A1A1A1;
+    border-radius: 60px;
+    margin-left: 25px;
+     background-color: #808080;
+}
+.userInfo .userName{
+    width: 120px;
+    height: 118px;
+
+    margin-left: 20px;
+}
+.userName .p1{
+    font-weight: bold;
+    margin-top: 30px;
+    color: #ffffff;
+
+
+}
+.userName .p2{
+    margin-top: 5px;
+    font-weight: bold;
+    /*color: #FD3D4C;*/
+    color: #ffffff;
+}
+
+.jifen{
+    width: 280px;
+    height: 118px;
+    margin-left: 200px;
+
+}
+ .jifen .p3{
+    margin-top: 30px;
+     color: #ffffff;
+     opacity: 0.8;
+    margin-left: 200px;
+
+
+}
+.jifen .p3 span{
+    font-weight: bold;
+    color: #FD3D4C;
+    margin-left: 5px;
+}
+ .jifen .p4{
+    font-size: 12px;
+    /*color: #A1A1A1;*/
+     color: #ffffff;
+     margin-left: 200px;
+
+
+
+}
+ .jifen .p5{
+    margin-top: 10px;
+}
+ .jifen .p5 a{
+    color: #00A934;
+    text-decoration: underline;
+}
+.userInfo .youhui{
+    height: 118px;
+    margin-left: 100px;
+}
+.userInfo .youhui .p6{
+    margin-top: 30px;
+    color: #ffffff;
+    opacity: 0.8;
+
+}
+.userInfo .youhui .p6 span:first-child{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.userInfo .youhui .p6 span:last-child{
+    font-weight: bold;
+    color: #ffffff;
+    opacity: 0.8;
+
+}
+.userInfo .youhui .p7,.p8{
+    font-size: 12px;
+   color: #ffffff;
+}
+.black{
+    width: 982px;
+    height: 10px;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    z-index: 100;
+    background-color: #ffffff;
+    margin-left: -1px;
+}
+.myOrder{
+    width: 100%;
+    height: 50px;
+
+    border-top: 2px solid #00A933;
+
+    border-bottom: 1px solid #d1d1d1;
+    text-align: left;
+    position: relative;
+    background-color: #F2F2F2;
+}
+.myOrder .s1{
+    line-height: 50px;
+    position: absolute;
+    left: 5px;
+    font-weight: bold;
+}
+.myOrder .s2{
+    line-height: 50px;
+    position: absolute;
+    right: 15px;
+}
+.myOrders{
+    width: 100%;
+    min-height: 100px;
+}
+.myOrders .good{
+    width: 100%;
+    height: 100px;
+}
+
+.collect{
+    height: 406px;
+    width: 978px;
+    border:1px solid #A1A1A1;
+    border-top: 0;
+    color:#666;
+}
+
+.cNav{
+    height: 47px;
+    line-height: 40px;
+    border-top: 3px solid #01BC39;
+    border-bottom: 1px solid #A1A1A1;
+    background-color: #F2F2F2;
+}
+
+.cNav span{
+    display: inline-block;
+}
+
+.cNav .s1{
+    margin-left: 8px;
+    width: 150px;
+}
+.cNav .s2{
+    width: 400px;
+    text-align: center;
+}
+
+.good{
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #A1A1A1;
+}
+
+.good:last-child{
+    border-bottom: 0;
+}
+
+.good div{
+    float: left;
+}
+
+.good .d1{
+    width: 50px;
+    height: 120px;
+    line-height: 120px;
+    margin-left: 8px;
+
+}
+
+.good .goodInfo{
+    height: 120px;
+    width: 550px;
+    line-height: 120px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.good .goodInfo img{
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+}
+
+.good .goodInfo p{
+    height: 60px;
+    width: 410px;
+    margin-left: 10px;
+    margin-top: 30px;
+    display: inline-block;
+    line-height: normal;
+
+}
+
+.good .price{
+    width: 150px;
+    height: 120px;
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+    line-height: 120px;
+    text-align: center;
+}
+
+.good .op{
+    margin-left: 50px;
+    width: 150px;
+    height: 120px;
+}
+
+.good .op span{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    height: 30px;
+
+}
+
+.good .op span:first-child{
+    margin-top: 25px;
+}
+
+.good .g1{
+    width: 50px;
+    height: 120px;
+    color:#a1a1a1;
+    font-size: 18px;
+    line-height: 120px;
+    text-align: center;
+}
+
+.good .g2{
+    width: 50px;
+    height: 120px;
+    font-size: 18px;
+    line-height: 120px;
+    text-align: center;
+}
+.good .g3{
+    width: 150px;
+    height: 120px;
+    color: red;
+    font-size: 18px;
+    line-height: 120px;
+    text-align: center;
+}
+.good .g4{
+    width: 80px;
+    height: 120px;
+    color:#666;
+    font-size: 18px;
+    line-height: 120px;
+    text-align: center;
+}
+.good .g5{
+    width: 50px;
+    height: 120px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.myHeader{
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.index_yingyang
+{
+    width: 980px;
+    margin: 0 auto;
+    height: 300px;
+    /*border-bottom: 1px dotted #333;*/
+}
+
+.bestbuy .bbig{
+    border-left: 1px solid #e8e8e8;
+    float: left;
+    width: 1200px;
+}
+
+.img{
+    /*margin-top: 5px;*/
+    position: relative;
+    height: 305px;
+    float: left;
+
+    border-top: 1px solid #D9DADB;
+    border-bottom: 1px solid #D9DADB;
+    border-right: 1px solid #D9DADB;
+
+    width: 245px;
+    overflow: hidden;
+    display: inline;
+
+}
+/*.index_yingyang .img{*/
+/*height: 215px;*/
+/*}*/
+.img:first-child{
+    border-left: 1px solid #D9DADB;
+}
+.img:last-child{
+    width: 240px;
+}
+.Once .img{
+    border-bottom:none;
+}
+
+
+.img .two{
+    border-top:20px solid #e2d88d;
+}
+.img .one{
+    border-top:20px solid #ffcc00;
+}
+.img .three{
+    border-top:20px solid  #ff9966;
+}
+.img:hover{
+    /*border: 1px solid green;*/
+}
+.img img{
+    height: 205px;
+    width: 227px;
+    padding-top: 5px;
+    margin-left: 8px;
+}
+.img div{
+    margin-top: 10px;
+    margin-left: 9px;
+    float: left;
+
+    width: 190px;
+    margin-right: 9px;
+
+}
+.img div .f1{
+    text-decoration: line-through;
+    color: #666666;
+
+    line-height: 3;
+}
+.img div .f2
+{
+    color: #FF4700;
+    line-height: 3;
+    font-weight: bold;
+    font-size: 16px;
+}
+.img div .spanHover{
+    color: green;
+}
+.img div .discription1{
+    opacity: 0.8;
+}
+.img div .discription2{
+    color: #666666;
+}
+
+.shoucan {
+    margin-top:400px;
+}

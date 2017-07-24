@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/register.css" rel="stylesheet" type="text/css">
+    <link href="../css/bottomTag.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="header">
+    <div class="logo">
+        <img src="../image/LOGO.png" alt="logo">
+    </div>
+    <div class="nav">
+      注册会员
+    </div>
+</div>
+
+<div class="main">
+<div class="tabs">
+
+    <div id="panel-1">
+        <div class="register">
+            <div class="tip">
+                <span class="zhuce">用户注册</span>
+                <span class="login">已有账号？ <a>点击登陆</a></span>
+            </div>
+            <form action="">
+                <!--
+                <span>用户名:</span><br>
+                <input type="text"><br>
+                <p style="color: red;display: none;margin-left: 75px;" id="user">该用户已经注册</p>
+                -->
+                <span>手机号码:</span><input type="text" id="tel" placeholder="请输入手机号"><br>
+                <p style="color: red;display: none;margin-bottom: 5px;" id="telNull">手机号不能为空</p>
+                <div class="yanzhengma">
+                    <span>验证码:</span><br>
+                    <input type="text" placeholder="请输入验证码" class="validate"><input type="button" class="v" value="获取验证码"><br>
+                </div>
+                <p style="color: red;display: none;margin-left: 75px;" id="validateError">验证码错误</p>
+
+                <span>密&nbsp;码:</span><input type="password" placeholder="请输入密码"><br>
+                <p style="color: red;display: none;margin-left: 75px;" id="pswError">6-20个字符内，使用字母、数字或符号</p>
+                <span>确认密码:</span><input type="password" placeholder="请输入密码"><br>
+                <p style="color: red;display: none;margin-left: 75px;" id="pswConfirmError">密码不一致</p>
+                <div class="check">
+                    <input type="checkbox" checked="checked" id="ch"><span>我已阅读并同意&nbsp;<a>第二菜场服务协议</a></span><br>
+                    <span id="agree" style="color: red;display: none;">必须同意才能注册！</span>
+                </div>
+                <div class="zhuce">
+                    <input type="submit" value="注册">
+                </div>
+            </form>
+        </div>
+        <div class="adv">
+            <img src="" alt="广告">
+        </div>
+    </div>
+
+</div>
+</div >
+
+<div class="footer">
+    <div class="foot">
+        <div class="connectUs">
+            <ul>
+                <li><a href="#">关于我们</a> </li>
+                <li><a href="#">支付方式</a> </li>
+                <li><a href="#">联系我们</a> </li>
+            </ul>
+        </div>
+
+        <div class="bottomTag">
+            <div class="bottomContent">
+                <a href="#">沪ICP备13044278号</a>
+                <span>|</span>
+                <a href="#">合字B1.B2-2013004</a>
+                <span>|</span>
+                <a href="#">营业执照</a>
+                <span>|</span>
+                <a href="#">互联网药品信息服务资格证</a>
+                <span>|</span>
+                <a href="#">互联网药品交易服务资格证</a>
+            </div>
+        </div>
+        <div class="authority">
+            <span>Copyright©2016我的菜场，All Rights Reserved</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+<script>
+    $(document).ready(function(){
+
+        $(".v").click(function(){
+            $(this)[0].disabled=true;
+            $(this).css("cursor","default");
+            intervalId= setInterval("CountDown()",1000);
+        });
+        $("#tel").blur(function(){
+            var t=$(this).val();
+
+            if(t==""||t==null)
+            {
+                $("#telNull").css("display","block");
+            }
+            else
+            {
+                $("#telNull").css("display","none");
+            }
+
+
+        })
+        $("#ch").click(function(){
+            var dom=this.checked;
+            if(!dom)
+            {
+                $("input[type='submit']")[0].disabled=true;
+                $("#agree").css("display","inline");
+                $("input[type='submit']").css("cursor","default");
+            }
+            else
+            {
+                $("input[type='submit']")[0].disabled=false;
+                $("#agree").css("display","none");
+                $("input[type='submit']").css("cursor","pointer");
+            }
+
+        });
+
+
+    });
+    var intervalId;
+    var leftseconds = 119;
+    function CountDown()
+    {
+
+        var tag = $(".v")[0];
+        if (leftseconds <= 0)
+        {
+            tag.value = "获取验证码";
+            tag.disabled = false;
+            clearInterval(intervalId);
+            leftseconds = 119;
+
+        }
+        else {
+            tag.value =  leftseconds + "s";
+            leftseconds--;
+        }
+    }
+</script>
+</body>
+</html>

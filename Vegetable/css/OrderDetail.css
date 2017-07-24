@@ -1,0 +1,237 @@
+#orderDetail {
+    width: 1200px;
+    height: 1000px;
+    margin: 0px auto;
+}
+
+.orderState {
+    width: 1200px;
+    height:130px;
+    border: 1px solid #d1d1d1;
+    margin-top: 10px;
+}
+
+.orderStateHead {
+    width: 1200px;
+    height:90px;
+    border-bottom: 1px dashed #d1d1d1;
+    line-height: 100px;
+    /* margin:10px auto;*/
+}
+
+.orderStateHead span {
+    padding-top:20px;
+}
+
+.orderStateBody {
+    width: 1200px;
+    height:30px;
+    /* border: 1px solid #d1d1d1;*/
+}
+
+#orderLabel {
+    display: block;
+    font: 16px/150% Arial, Verdana, "微软雅黑",bold;
+    margin: 14px 0px 14px 30px;
+    float: left;
+    color: #6C6C6C;
+}
+
+#orderId {
+    display: block;
+    font: 16px/150% Arial, Verdana, "微软雅黑",bold;
+    margin: 14px auto;
+    float:left;
+    color: #6C6C6C;
+}
+
+#orderStateLabel {
+    display: block;
+    font: 16px/150% Arial, Verdana, "微软雅黑",bold;
+    margin: 14px 0px 14px 70px;
+    float:left;
+    color: #6C6C6C;
+}
+
+#orderStateContent {
+    font: 16px/150% Arial, Verdana, "微软雅黑",bold;
+    font-color: #008000;
+    margin: 14px auto;
+    float:left;
+    color: #6C6C6C;
+}
+
+.order-state-input {
+    background: #00A934;
+    float: right;
+    width: 150px;
+    height: 35px;
+    margin-right:20px;
+    margin-top: 25px;
+    font-family: "微软雅黑";
+    color:#f3f3f3;
+    font-size:14px;
+    text-align: center;
+    border: 1px solid #00A934;
+}
+
+#orderStateDescription {
+    display: block;
+    font: 12px/150% Arial, Verdana, "微软雅黑",bold;
+    margin: 8px 0px 8px 30px;
+    float:left;
+}
+
+/*状态进程图*/
+.orderStateImg {
+    width: 1000px;
+    height: 104px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+.title {
+    display:block;
+}
+
+.greensolidline {
+    float: left;
+    border:2px solid #7ABC52;
+    width: 250px;
+}
+
+.greendashedline {
+    float: left;
+    border:2px dashed #7ABC52;
+    width: 250px;
+}
+
+.orderTrack {
+    width: 1200px;
+    height:180px;
+    border: 1px solid #d1d1d1;
+    margin-top: 10px;
+    color:#6C6C6C;
+}
+
+.orderHead {
+    width: 1200px;
+    height:40px;
+    border-bottom: 1px solid #d1d1d1;
+    background-color: #F8F8F8;
+}
+
+
+.orderTitle {
+    display: block;
+    font-size: 16px;
+    font-weight:bold;
+    color:#6C6C6C;
+    margin: 9px 0px 5px 28px;
+    float: left;
+}
+
+.paymentInfo {
+    width: 1200px;
+    height:180px;
+    border: 1px solid #d1d1d1;
+    margin-top: 10px;
+}
+.commodityInfo {
+    width: 1200px;
+    height:180px;
+    border: 1px solid #d1d1d1;
+    margin-top: 10px;
+}
+.recipientsInfo {
+    width: 1200px;
+    height:180px;
+    border: 1px solid #d1d1d1;
+    margin-top: 10px;
+}
+
+/*订单追踪*/
+.orderBody {
+    width: 1200px;
+    height:140px;
+}
+
+.trackTable{
+    margin-left:40px;
+    margin-top:25px;
+}
+
+
+.tablelabel{
+    float: right;
+    font-family: "微软雅黑";
+    font-size:14px;
+    position: relative;
+}
+
+.tablelabel2{
+    float: right;
+    font-family: "微软雅黑";
+    font-size:14px;
+    position: relative;
+    margin-left:80px
+}
+
+.tablecontent{
+    padding-left: 25px;
+   /* padding-top: 10px;*/
+}
+
+/*商品信息*/
+.productInfo img{
+    width:90px;
+    height:90px;
+    float:left;
+    margin-top: 25px;
+    margin-left:30px;
+    display:inline-block;
+}
+.productInfo p{
+    float:left;
+    margin-top: 45px;
+    margin-left:80px;
+    width:200px;
+    color:#6C6C6C;
+    display:inline-block;
+}
+.singlePrice {
+    float:left;
+    margin-top: 55px;
+    margin-left:105px;
+    color:#6C6C6C;
+    font-weight:bold;
+    font-size:18px;
+    display:inline-block;
+}
+
+.number {
+    float:left;
+    margin-top: 55px;
+    margin-left:205px;
+    color:#6C6C6C;
+    font-size:18px;
+    display:inline-block;
+}
+
+.totalPayment {
+    float:left;
+    margin-top: 55px;
+    margin-left:180px;
+    font-size:18px;
+    display:inline-block;
+}
+
+.totalPayment .price {
+    color:#FF6D40;
+    font-weight:bold;
+    font-size:18px;
+}

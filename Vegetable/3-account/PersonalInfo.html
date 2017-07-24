@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人信息</title>
+    <link href="../css/MyAccountCommon.css" type="text/css" rel="stylesheet">
+    <link href="../css/personalInfo.css" type="text/css" rel="stylesheet">
+    <link href="../css/HeaderAndFooter.css" rel="stylesheet" type="text/css">
+    <link href="../css/bottomTag.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--the top of page-->
+<div class="top">
+    <div class="top_nav">
+        <ul class="fl">
+            <li> 欢迎光临第二菜场！</li>
+            <li class="login"> <a href="#">登录</a></li>
+            <li class="register"><a href="#">注册</a></li>
+            <li class="cityDiv">配送至：<strong class="selectCity">南昌&nbsp;青山湖区</strong></li>
+        </ul>
+        <ul class="fr">
+            <li class="account_menu"><a href="#">我的账号</a><p></p>
+                <div class="navDown">
+                    <div><a href="#">个人资料</a> </div>
+                    <div><a href="#">我的订单</a> </div>
+                    <div><a href="#">账户资产</a> </div>
+                    <div><a href="#">好友推荐</a> </div>
+                    <div><a href="#">会员积分</a> </div>
+                    <div><a href="#">我的收藏</a> </div>
+                    <div><a href="#">我的留言</a> </div>
+                    <div><a href="#">售后服务</a> </div>
+                </div>
+
+            </li>
+            <li><a href="#">手机App</a></li>
+            <li><a href="#">帮助</a> </li>
+            <li><a href="#">关注</a></li>
+        </ul>
+    </div>
+</div>
+<!--the top of page-->
+<div class="header">
+    <div class="header_inner">
+        <div class="logo">
+            <img src="../image/LOGO.png" alt="logo">
+        </div>
+        <div class="index_promo"></div>
+        <div class="search">
+            <form action="">
+                <input type="text" class="text" placeholder="关键词">
+                <input type="submit" class="submit" value="搜索">
+            </form>
+
+            <div class="search_hot">
+                热门：<a href="#">樱桃</a>
+                <a href="#">皇帝菜</a>
+                <a href="#">海鲜</a>
+                <a href="#">西红柿</a>
+                <a href="#">食用油</a>
+            </div>
+        </div>
+        <div class="shopingcar">
+            <a href="#">我的购物车</a>
+            <b class="carnum">0</b>
+            <div class="shop_car" id="shopCar">
+                <div class="float_car">
+                    <div class="nopro">
+                        <p>购物车暂无商品</p>
+                        <p>
+                            <span>
+                                如您已添加商品，请<a href="#">登录</a>查看
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="mainNav">
+    <div class="navmenu">
+        <div class="categories">
+            <div class="dt">
+                <a href="#" class="topall">全部商品分类</a>
+            </div>
+
+        </div>
+        <div class="menu1">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">折扣区</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li><a href="#">积分商城</a><p></p></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<div class="crumbs">
+    <span><a href="#">首页</a></span>
+    <span>></span>
+    <span><a href="#">我的菜场</a></span>
+</div>
+
+<div class="center">
+    <div class="left">
+        <div class="left_top">
+            <div>
+                <img src="../image/1.png" style="width:20px;height:20px">
+                <a href="#" style="margin-left:5px;font-weight:bold;">个人资料</a>
+            </div>
+        </div>
+        <div class="text"><a href="#" class="select">基本信息</a> </div>
+        <div class="text"><a href="#">送货地址</a> </div>
+        <div class="text"><a href="#">修改密码</a> </div>
+        <div class="nav"><img src="../image/2.png"><a href="#">我的订单</a></div>
+        <div class="nav"><img src="../image/3.png"><a href="#">账户资产</a></div>
+        <div class="nav"><img src="../image/4.png"><a href="#">好友推荐</a></div>
+        <div class="nav"><img src="../image/5.png"><a href="#">会员积分</a></div>
+        <div class="nav"><img src="../image/6.png"><a href="#">我的收藏</a></div>
+        <div class="nav"><img src="../image/7.png"><a href="#">用户反馈</a></div>
+        <div class="nav"><img src="../image/8.png"><a href="#">售后服务</a></div>
+        <div class="nav"><img src="../image/9.png"><a href="#">评价回复</a></div>
+    </div>
+    <div class="InfoRight">
+        <div class="InfoTop">
+            <p>基本信息</p>
+        </div>
+        <div class="InfoBody">
+            <form action="">
+                <table class="InfoTable">
+                    <tr>
+                        <td class="tablelabel_photo">头像：</td>
+                        <td  class="userphoto tablecontent">
+                                <a href="javascript:;" class="file">
+                                <input type="file" name="">
+                                    <img src="../image/spare.png">
+                                </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">用户名：</td>
+                        <td class="tablecontent"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">邮箱：</td>
+                        <td class="tablecontent"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel"><span>*</span>真实姓名：</td>
+                        <td class="tablecontent"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">性别：</td>
+                        <td class="tablecontent">
+                            <div id="sex1" class="sex" value="1">男</div>
+                            <div id="sex2" class="sex women" value="0">女</div>
+                            <div class="sex1"></div>
+                            <div class="sex2"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablelabel">生日：</td>
+                        <td class="tablecontent">
+                            <select id="year" onchange="swap_day()" class="selectElement"></select>
+                            <span class="timeperiod">年</span>
+                            <select id="month" onchange="swap_day()" class="selectElement"></select>
+                            <span class="timeperiod">月</span>
+                            <select id="day" class="selectElement"></select>
+                            <span class="timeperiod">日</span>
+                        </td>
+                    </tr>
+                </table>
+                <p class="surprise">填生日有惊喜哦~</p>
+                <div class="tablesavebtn">
+                    <input type="submit" value="提交填写" class="savebtn" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--the footer of page-->
+<div class="footer">
+    <div class="footer_banner">
+        <ul>
+            <li>100%原产地</li>
+            <li>绿色安全</li>
+            <li>无理由退货</li>
+            <li>24X7配送</li>
+        </ul>
+    </div>
+
+    <div class="foot">
+        <div class="connectUs">
+            <ul>
+                <li><a href="#">关于我们</a> </li>
+                <li><a href="#">支付方式</a> </li>
+                <li><a href="#">联系我们</a> </li>
+            </ul>
+        </div>
+        <div class="bottomTag">
+            <div class="bottomContent">
+                <a href="#">沪ICP备13044278号</a>
+                <span>|</span>
+                <a href="#">合字B1.B2-2013004</a>
+                <span>|</span>
+                <a href="#">营业执照</a>
+                <span>|</span>
+                <a href="#">互联网药品信息服务资格证</a>
+                <span>|</span>
+                <a href="#">互联网药品交易服务资格证</a>
+            </div>
+        </div>
+        <div class="authority">
+            <span>Copyright©2016我的菜场，All Rights Reserved</span>
+        </div>
+    </div>
+</div>
+<!--the footer of page-->
+<!--district select-->
+<div class="mask"></div>
+<div id="maskLayer">
+    <div id="drag">
+        <h3 id="drag_h">
+            <b>地区选择</b><span id="close">X</span>
+        </h3>
+        <div id="drag_con">
+            <div id="city2">
+                省份：<select class="prov"></select>
+                &nbsp; 市区选择：<select class="city"></select>
+                <select class="dist"></select>
+                <button id="btn" style="position: absolute;right: 10px;cursor: pointer;">确定</button>
+            </div>
+        </div>
+        <div class="distSelect">
+            <div>区域选择:</div>
+            <ul>
+                <li>林芝地铁站</li>
+                <li>海兵广场</li>
+                <li>缤纷商城圈</li>
+                <li>宝安体育中心</li>
+                <li>翻身创业天虹</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--end of district select-->
+
+<script type="text/javascript" src="../js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="../js/jquery.cityselect.js"></script>
+<script type="text/javascript">
+    $(function(){
+        //购物车显示效果
+        $(".shopingcar").mouseover(function(){
+            var obj=$("#shopCar");
+            $(obj).css("display","block");
+            $(obj).css("left",this.clientX);
+            $(obj).css("top",this.clientY+10);
+        }).mouseout(function(){
+            $("#shopCar").css("display","none");
+        });
+
+        //下拉框
+        $(".navDown").parent().hover(function(){
+            $(".fr p").addClass("hover");
+
+            $(this).find(".navDown").slideDown("normal");
+        },function(){
+            $(".fr p").removeClass("hover");
+            $(this).find(".navDown").stop().slideUp("normal");
+        });
+
+
+        //地区选择
+        $(".cityDiv").click(function () {
+
+            $("#maskLayer").css("left", ($(window).width() - $("#maskLayer").outerWidth()) / 2);
+            $("#maskLayer").css("top", "120px");
+            $(".mask").css({
+                "display": "block",
+                "height": $(document).height()
+            });
+            $("#maskLayer").css("display", "block");
+            $("#city2").citySelect({
+
+                //required: false
+                prov: "江西",
+                city: "南昌",
+                dist: "青山湖区",
+                nodata: "none"
+            });
+
+        });
+        $("#btn").click(function () {
+            if( $(".dist").val()!=null)
+                $(".selectCity").html($(".city").val() + " " + $(".dist").val());
+            else
+                $(".selectCity").html($(".prov").val() + " " + $(".city").val());
+            $("#maskLayer").css("display", "none");
+            $(".mask").css({
+                "display": "none"
+
+            });
+            //alert($(".city").val()+" "+$(".dist").val());
+        })
+        $("#close").click(function () {
+            $("#maskLayer").css("display", "none");
+            $(".mask").css({
+                "display": "none"
+
+            });
+        });
+        $(".innerNav>div").click(function(){
+            $(".innerNav>div").removeClass("select");
+            $(this).addClass("select");
+            var $id=$(this).attr("id");
+            var $class="."+$id;
+            $(".content,.content1,.content2").css("display","none");
+            $($class).css("display","block");
+
+
+
+        });
+
+        //选择性别
+        $(".sex").click(function() {
+            console.log(this);
+            var $id = $(this).attr("id");
+            console.log($id);
+            var $class= '.'+$id;
+            $(".sex1, .sex2").css("display","none");
+            $($class).css("display","block");
+        })
+    })
+
+    //日历控件
+    var month_big = new Array("1","3","5","7","8","10","12"); //包含所有大月的数组
+    var month_small = new Array("4","6","9","11"); //包含所有小月的数组
+    //页面加载时调用的初始化select控件的option的函数
+    function init()
+    {
+        var select_year = document.getElementById("year"); //获取id为"year"的下拉列表框
+        var select_month = document.getElementById("month"); //获取id为"month"的下拉列表框
+        var select_day = document.getElementById("day"); //获取id为"day"的下拉列表框
+
+        //将年份选项初始化，从1950到2016
+        for(var i = 2016; i >= 1950; i--)
+        {
+            select_year_option = new Option(i, i);
+            select_year.options.add(select_year_option);
+        }
+
+        //将月份选项初始化，从1到12
+        for(var i = 1; i <= 12; i++)
+        {
+            select_month_option = new Option(i, i);
+            select_month.options.add(select_month_option);
+        }
+
+        //调用swap_day函数初始化日期
+        swap_day();
+    }
+
+    //判断数组array中是否包含元素obj的函数，包含则返回true，不包含则返回false
+    function array_contain(array, obj)
+    {
+        for (var i = 0; i < array.length; i++)
+        {
+            if (array[i] === obj)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //根据年份和月份调整日期的函数
+    function swap_day()
+    {
+        var select_year = document.getElementById("year"); //获取id为"year"的下拉列表框
+        var select_month = document.getElementById("month"); //获取id为"month"的下拉列表框
+        var select_day = document.getElementById("day"); //获取id为"day"的下拉列表框
+
+        select_day.options.length = 0; //在调整前先清空日期选项里面的原有选项
+        var month = select_month.options[select_month.selectedIndex].value; //获取被选中的月份month
+
+        //如果month被包含在month_big数组中，即被选中月份是大月，则将日期选项初始化为31天
+        if(array_contain(month_big, month))
+        {
+            for(var i = 1; i <= 31; i++)
+            {
+                select_day_option = new Option(i, i);
+                select_day.options.add(select_day_option);
+            }
+        }
+
+        //如果month被包含在month_small数组中，即被选中月份是小月，则将日期选项初始化为30天
+        else if(array_contain(month_small, month))
+        {
+            for(var i = 1; i <= 30; i++)
+            {
+                select_day_option = new Option(i, i);
+                select_day.options.add(select_day_option);
+            }
+        }
+
+        //如果month为2，即被选中的月份是2月，则调用initFeb()函数来初始化日期选项
+        else
+        {
+            initFeb();
+        }
+    }
+    //判断年份year是否为闰年，是闰年则返回true，否则返回false
+    function isLeapYear(year)
+    {
+        var a = year % 4;
+        var b = year % 100;
+        var c = year % 400;
+        if( ( (a == 0) && (b != 0) ) || (c == 0) )
+        {
+            return true;
+        }
+        return false;
+    }
+
+    //根据年份是否闰年来初始化二月的日期选项
+    function initFeb()
+    {
+        var select_year = document.getElementById("year"); //获取id为"year"的下拉列表框
+        var select_day = document.getElementById("day"); //获取id为"day"的下拉列表框
+        var year = parseInt(select_year.options[select_year.selectedIndex].value); //获取被选中的年份并转换成Int
+
+        //如果是闰年，则将日期选项初始化为29天
+        if(isLeapYear(year))
+        {
+            for(var i = 1; i <= 29; i++)
+            {
+                select_day_option = new Option(i, i);
+                select_day.options.add(select_day_option);
+            }
+        }
+
+        //如果不是闰年，则将日期选项初始化为28天
+        else
+        {
+            for(var i = 1; i <= 28; i++)
+            {
+                select_day_option = new Option(i, i);
+                select_day.options.add(select_day_option);
+            }
+        }
+    }
+    init();
+</script>
+</body>
+</html>

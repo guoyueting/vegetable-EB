@@ -1,0 +1,21 @@
+.banner{
+    height: 340px;
+    width: 1200px;
+    margin: 10px auto;
+
+}
+.banner img{
+    width: 1198px;
+    height: 340px;
+    border: 1px solid #c9c9c9;
+
+}
+.comCat{
+
+    font-weight: bold;
+    color: #00A933;
+}
+.menu1 .comCat a{
+    color: #00A933;
+}
+
